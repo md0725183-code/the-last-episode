@@ -141,26 +141,24 @@ Continue
 </div>
 
 <script>
-
 function checkPassword(){
 
 let p=document.getElementById("pass").value;
 
 if(p==="01082026"){
 
-document.getElementById("message").innerHTML="❤️ 
-Access Granted ❤️";
-setTimeout(function(){
+document.querySelector(".container").innerHTML=`
+<h1 style="color:#E50914;">THE LAST EPISODE</h1>
 
-document.getElementById("pass").style.display="none";
-document.querySelector("button").style.display="none";
-document.querySelector(".logo").style.display="none";
-document.querySelector(".subtitle").style.display="none";
-document.getElementById("message").style.display="none";
+<div class="ep">🌙 Episode 1 - The Beginning</div>
+<div class="ep">👑 Episode 2 - My Queen</div>
+<div class="ep">📸 Episode 3 - Every Smile</div>
+<div class="ep">🎂 Episode 4 - Happy Birthday</div>
+<div class="ep">💌 Episode 5 - Our Memories</div>
+<div class="ep">💍 Episode 6 - Our Future</div>
+<div class="ep">❤️ Episode 7 - The Last Episode</div>
+`;
 
-document.getElementById("home").style.display="block";
-
-},1500);
 }else{
 
 document.getElementById("message").innerHTML="❌ Wrong Password";
