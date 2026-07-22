@@ -140,16 +140,31 @@ Continue
 </div>
 
 <script>
-function episode1(){
-alert("Episode 1 coming next...");
-}
 
+function episode1(){
+  document.querySelector(".container").innerHTML=`
+<h1 style="color:#E50914;">🌙 Episode 1 - The Beginning</h1>
+
+<p style="font-size:20px;line-height:1.8;">
+Har khoobsurat kahani ki shuruaat Allah ki marzi se hoti hai.
+Hamari kahani bhi bilkul aisi hi hai...
+</p>
+
+<button onclick="location.reload()">
+⬅ Back
+</button>
+`;
+}
 function checkPassword(){
+
+let p = document.getElementById("pass").value;
 
 if(p==="01082026"){
 
 document.querySelector(".container").innerHTML=`
 <h1 style="color:#E50914;">THE LAST EPISODE</h1>
+
+
 
 <div class="ep" onclick="episode1()">🌙 Episode 1 - The Beginning</div>
 <div class="ep">👑 Episode 2 - My Queen</div>
@@ -159,7 +174,6 @@ document.querySelector(".container").innerHTML=`
 <div class="ep">💍 Episode 6 - Our Future</div>
 <div class="ep">❤️ Episode 7 - The Last Episode</div>
 `;
-
 }else{
 
 document.getElementById("message").innerHTML="❌ Wrong Password";
