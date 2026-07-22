@@ -121,8 +121,7 @@ Continue
   <div id="home">
 
 <h1>THE LAST EPISODE</h1>
-
-<div class="ep">🌙 Episode 1 - The Beginning</div>
+<div class="ep" onclick="episode1()">🌙 Episode 1 - The Beginning</div>
 
 <div class="ep">👑 Episode 2 - My Queen</div>
 
@@ -141,16 +140,18 @@ Continue
 </div>
 
 <script>
-function checkPassword(){
+function episode1(){
+alert("Episode 1 coming next...");
+}
 
-let p=document.getElementById("pass").value;
+function checkPassword(){
 
 if(p==="01082026"){
 
 document.querySelector(".container").innerHTML=`
 <h1 style="color:#E50914;">THE LAST EPISODE</h1>
 
-<div class="ep">🌙 Episode 1 - The Beginning</div>
+<div class="ep" onclick="episode1()">🌙 Episode 1 - The Beginning</div>
 <div class="ep">👑 Episode 2 - My Queen</div>
 <div class="ep">📸 Episode 3 - Every Smile</div>
 <div class="ep">🎂 Episode 4 - Happy Birthday</div>
