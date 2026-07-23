@@ -1,3 +1,12 @@
+function playMusic(){
+
+const music=document.getElementById("bgMusic");
+
+music.volume=0.25;
+
+music.play().catch(()=>{});
+
+}
 function fadeTo(nextScene){
 
 const fade=document.getElementById("fade");
