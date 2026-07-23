@@ -468,4 +468,77 @@ Next Scene ➜
 `;
 
 }
+function episode2Scene6(){
+
+document.querySelector(".container").innerHTML=`
+
+<div class="movieScene" style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;">
+<img src="photo5.jpg" class="moviePhoto">
+<div style="width:100%;max-width:420px;margin:20px auto 30px auto;">
+
+<div style="
+height:8px;
+background:#333;
+border-radius:20px;
+overflow:hidden;">
+
+<div style="
+width:90%;
+height:100%;
+background:#E50914;">
+</div>
+
+</div>
+
+<p style="
+margin-top:8px;
+color:#aaa;
+font-size:14px;">
+Scene 6 of 7
+</p>
+
+</div>
+
+<h1 style="margin-top:25px;color:#E50914;">
+🌹 Your Grace
+</h1>
+
+<p style="font-size:20px;line-height:1.8;margin-top:20px;">
+
+It's not just your beauty...
+
+It's your graceful way of speaking,
+your smile,
+your kindness,
+and the elegance in every little moment.
+
+<br><br>
+
+You don't need to try to be special...
+
+Because you already are.
+
+❤️
+
+</p>
+
+<div class="movieControls">
+
+<button onclick="episode2Scene5()"
+style="padding:12px 22px;background:#444;color:white;border:none;border-radius:10px;margin-right:10px;">
+⬅ Previous
+</button>
+
+<button onclick="episode2Scene7()"
+style="padding:12px 22px;background:#E50914;color:white;border:none;border-radius:10px;">
+Next Scene ➜
+</button>
+
+</div>
+
+</div>
+
+`;
+
+}
 
