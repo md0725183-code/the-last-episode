@@ -618,4 +618,58 @@ Finish Movie 🎬
 `;
 
 }
+function episode2Ending(){
+
+document.querySelector(".container").innerHTML=`
+
+<div style="
+background:black;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:25px;
+color:white;">
+
+<h1 style="color:#E50914;font-size:42px;">
+THE END
+</h1>
+
+<p style="font-size:22px;line-height:1.8;margin:30px 0;max-width:600px;">
+
+Every time I look at you...
+
+I fall in love with you all over again.
+
+❤️
+
+Thank you for being the most beautiful chapter of my life.
+
+Forever Yours...
+
+Mohammed Hassan
+
+</p>
+
+<button onclick="episode2()"
+style="padding:15px 30px;background:#E50914;color:white;border:none;border-radius:10px;font-size:18px;margin-bottom:15px;">
+🔁 Watch Again
+</button>
+
+<button onclick="location.reload()"
+style="padding:15px 30px;background:#444;color:white;border:none;border-radius:10px;font-size:18px;">
+🏠 Back to Home
+</button>
+
+</div>
+
+`;
+
+  }
+
+function episode2(){
+    episode2Intro();
+}
 
