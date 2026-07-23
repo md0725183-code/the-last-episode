@@ -68,3 +68,63 @@ episode2Scene1();
 },2600);
 
 }
+function episode2Intro(){
+
+document.querySelector(".container").innerHTML=`
+
+<div style="
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:black;
+text-align:center;
+padding:25px;
+animation:fadeIn 1.5s;">
+
+<div style="
+color:#E50914;
+font-size:18px;
+letter-spacing:4px;
+margin-bottom:25px;">
+NETFLIX PRESENTS
+</div>
+
+<h1 style="
+font-size:42px;
+color:white;
+margin-bottom:20px;">
+THE LAST EPISODE
+</h1>
+
+<h2 style="
+color:#E50914;
+margin-bottom:10px;">
+Episode 2
+</h2>
+
+<p style="
+font-size:24px;
+color:#ddd;
+margin-bottom:40px;">
+❤️ The Beauty I Fell In Love With
+</p>
+
+<button onclick="episode2Loading()"
+style="
+width:220px;
+padding:15px;
+font-size:20px;
+background:#E50914;
+border:none;
+border-radius:12px;
+color:white;">
+▶ Start Movie
+</button>
+
+</div>
+
+`;
+
+}
