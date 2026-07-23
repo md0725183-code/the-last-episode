@@ -128,3 +128,68 @@ color:white;">
 `;
 
 }
+function episode2Scene1(){
+
+document.querySelector(".container").innerHTML=`
+
+<div class="movieScene" style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;">
+
+<img src="photo11.jpg" class="moviePhoto">
+<div style="width:100%;max-width:420px;margin:20px auto 30px auto;">
+
+<div style="
+height:8px;
+background:#333;
+border-radius:20px;
+overflow:hidden;">
+
+<div style="
+width:15%;
+height:100%;
+background:#E50914;">
+</div>
+
+</div>
+
+<p style="
+margin-top:8px;
+color:#aaa;
+font-size:14px;">
+Scene 1 of 7
+</p>
+
+</div>
+
+<h1 style="margin-top:25px;color:#E50914;">
+👀 Your Eyes
+</h1>
+
+<p style="font-size:20px;line-height:1.8;margin-top:20px;">
+The first thing that stole my heart wasn't your words...
+<br><br>
+It was your beautiful eyes.
+<br><br>
+Every time I look into them,
+I find peace, comfort and a reason to fall in love with you again.
+❤️
+</p>
+
+<div class="movieControls">
+
+<button onclick="episode2Scene2()"
+style="padding:15px 30px;
+background:#E50914;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;">
+▶ Next Scene
+</button>
+
+</div>
+
+</div>
+
+`;
+
+}
