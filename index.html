@@ -177,9 +177,40 @@ border-radius:18px;
 box-shadow:0 0 30px rgba(255,0,0,.5);
 animation:slowZoom 10s linear forwards;
 }
+  @keyframes fadeMovie{
+0%{
+opacity:0;
+transform:translateY(20px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.movieScene{
+animation:fadeMovie .8s ease;
+}
+  .fadeOverlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:black;
+opacity:0;
+pointer-events:none;
+transition:opacity .5s;
+z-index:9999;
+}
+
+.fadeOverlay.show{
+opacity:1;
+}
 </style>
 
 </head>
+  <div id="fade" class="fadeOverlay"></div>
 
 <body>
 
@@ -443,6 +474,18 @@ Asli khoobsurat safar to ab shuru hua hai. ❤️
 </button>
 `;
 }
+  function fadeTo(nextScene){
+
+const fade=document.getElementById("fade");
+
+fade.classList.add("show");
+
+setTimeout(()=>{
+nextScene();
+fade.classList.remove("show");
+},500);
+
+}
   function episode2Intro(){
 
 document.querySelector(".container").innerHTML=`
@@ -507,7 +550,7 @@ color:white;">
 
 document.querySelector(".container").innerHTML=`
 
-<div style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;animation:fadeIn 1.5s;">
+<div class="movieScene" style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;">
 
 <img src="photo11.jpg" class="moviePhoto">
 <div style="width:100%;max-width:420px;margin:20px auto 30px auto;">
@@ -572,7 +615,7 @@ font-size:18px;">
 
 document.querySelector(".container").innerHTML=`
 
-<div style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;animation:fadeIn 1.5s;">
+<div class="movieScene" style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;">
 
 <img src="photo6.jpg" class="moviePhoto">
 <div style="width:100%;max-width:420px;margin:20px auto 30px auto;">
@@ -627,7 +670,7 @@ Next Scene ➜
 
 document.querySelector(".container").innerHTML=`
 
-<div style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;animation:fadeIn 1.5s;">
+<div class="movieScene" style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;">
 
 <img src="photo1.jpg" class="moviePhoto">
 <div style="width:100%;max-width:420px;margin:20px auto 30px auto;">
@@ -695,7 +738,7 @@ Next Scene ➜
 
 document.querySelector(".container").innerHTML=`
 
-<div style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;animation:fadeIn 1.5s;">
+<div class="movieScene" style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;">
 
 <img src="photo3.jpg" class="moviePhoto">
 <div style="width:100%;max-width:420px;margin:20px auto 30px auto;">
@@ -770,7 +813,7 @@ Next Scene ➜
 
 document.querySelector(".container").innerHTML=`
 
-<div style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;animation:fadeIn 1.5s;">
+<div class="movieScene" style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;">
 
 <img src="photo4.jpg" class="moviePhoto">
 <div style="width:100%;max-width:420px;margin:20px auto 30px auto;">
@@ -847,8 +890,7 @@ Next Scene ➜
 
 document.querySelector(".container").innerHTML=`
 
-<div style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;animation:fadeIn 1.5s;">
-
+<div class="movieScene" style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;">
 <img src="photo5.jpg" class="moviePhoto">
 <div style="width:100%;max-width:420px;margin:20px auto 30px auto;">
 
@@ -921,7 +963,7 @@ Next Scene ➜
 
 document.querySelector(".container").innerHTML=`
 
-<div style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;animation:fadeIn 1.5s;">
+<div class="movieScene" style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;">
 
 <img src="photo2.jpg" class="moviePhoto">
 <div style="width:100%;max-width:420px;margin:20px auto 30px auto;">
