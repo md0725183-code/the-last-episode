@@ -673,3 +673,10 @@ function episode2(){
     episode2Intro();
 }
 
+function home(){
+
+document.querySelector(".container").innerHTML =
+document.getElementById("home").innerHTML;
+
+}
+
