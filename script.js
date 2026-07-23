@@ -193,3 +193,58 @@ font-size:18px;">
 `;
 
 }
+function episode2Scene2(){
+
+document.querySelector(".container").innerHTML=`
+
+<div class="movieScene" style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;">
+
+<img src="photo6.jpg" class="moviePhoto">
+<div style="width:100%;max-width:420px;margin:20px auto 30px auto;">
+
+<div style="height:8px;background:#333;border-radius:20px;overflow:hidden;">
+
+<div style="width:30%;height:100%;background:#E50914;"></div>
+
+</div>
+
+<p style="margin-top:8px;color:#aaa;font-size:14px;">
+Scene 2 of 7
+</p>
+
+</div>
+
+<h1 style="margin-top:25px;color:#E50914;">
+😊 Your Smile
+</h1>
+
+<p style="font-size:20px;line-height:1.8;margin-top:20px;">
+Your smile has a magic
+that makes every difficult day feel beautiful.
+<br><br>
+Whenever you smile,
+my heart forgets every worry.
+<br><br>
+Your smile is my favourite place.
+❤️
+</p>
+
+<div class="movieControls">
+
+<button onclick="episode2Scene1()"
+style="padding:12px 22px;background:#444;color:white;border:none;border-radius:10px;margin-right:10px;">
+⬅ Previous
+</button>
+
+<button onclick="episode2Scene3()"
+style="padding:12px 22px;background:#E50914;color:white;border:none;border-radius:10px;">
+Next Scene ➜
+</button>
+
+</div>
+
+</div>
+
+`;
+
+}
