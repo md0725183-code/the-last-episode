@@ -127,6 +127,7 @@ transform:scale(1.03);
 <body>
 
 <div class="container">
+  <div id="login">
 
 <div class="logo">
 NETFLIX
@@ -146,7 +147,8 @@ Continue
 </button>
 
 <div id="message"></div>
-  <div id="home">
+</div>
+    <div id="home">
     <div style="padding:15px;">
 
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
@@ -284,12 +286,8 @@ let p = document.getElementById("pass").value;
 
 if(p==="01082026"){
 
-document.querySelector(".logo").style.display="none";
-document.querySelector(".subtitle").style.display="none";
-document.getElementById("pass").style.display="none";
-document.querySelector("button").style.display="none";
-document.getElementById("message").style.display="none";
-
+document.getElementById("login").style.display="none";
+document.getElementById("home").style.display="block";
 document.getElementById("home").style.display="block";
 
 }else{
