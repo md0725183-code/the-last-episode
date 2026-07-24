@@ -839,3 +839,65 @@ opacity:0;
 }
 
 }
+#birthdayWish{
+
+position:absolute;
+
+left:50%;
+bottom:30px;
+
+transform:translateX(-50%);
+
+width:85%;
+
+text-align:center;
+
+color:white;
+
+background:rgba(0,0,0,.45);
+
+padding:20px;
+
+border-radius:20px;
+
+backdrop-filter:blur(8px);
+
+animation:fadeWish 2s ease;
+
+}
+
+#birthdayWish h2{
+
+color:#FFD700;
+
+margin-bottom:15px;
+
+font-family:'Cinzel',serif;
+
+}
+
+#birthdayWish p{
+
+line-height:1.8;
+
+font-size:17px;
+
+}
+
+@keyframes fadeWish{
+
+from{
+
+opacity:0;
+transform:translate(-50%,30px);
+
+}
+
+to{
+
+opacity:1;
+transform:translate(-50%,0);
+
+}
+
+}
