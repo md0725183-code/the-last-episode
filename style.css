@@ -405,3 +405,47 @@ transition:.35s;
 .heroButtons button:hover{
 transform:scale(1.05);
 }
+.card{
+position:relative;
+overflow:hidden;
+transition:.45s;
+border:2px solid transparent;
+}
+
+.card img{
+transition:.6s;
+}
+
+.card:hover{
+
+transform:scale(1.06);
+
+border-color:#E50914;
+
+box-shadow:
+0 0 18px rgba(229,9,20,.7);
+
+}
+
+.card:hover img{
+
+transform:scale(1.12);
+
+}
+
+.card span{
+
+transition:.4s;
+
+}
+
+.card:hover span{
+
+background:
+linear-gradient(
+transparent,
+rgba(0,0,0,.98));
+
+padding-bottom:18px;
+
+}
