@@ -371,3 +371,37 @@ opacity:0;
 }
 
 }
+@keyframes heroFade{
+
+0%{
+opacity:0;
+transform:translateY(35px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.heroContent{
+animation:heroFade 1.2s ease forwards;
+}
+
+.heroButtons{
+display:flex;
+gap:12px;
+margin-top:22px;
+opacity:0;
+animation:heroFade .9s ease forwards;
+animation-delay:.7s;
+}
+
+.heroButtons button{
+transition:.35s;
+}
+
+.heroButtons button:hover{
+transform:scale(1.05);
+}
