@@ -686,27 +686,23 @@ style="margin-top:40px;padding:15px 35px;background:#E50914;color:#fff;border:no
 
 `;
 }
+let homePage = "";
   
 function checkPassword(){
 
 let p = document.getElementById("pass").value;
+
 
 if(p==="01082026"){
 
 document.getElementById("login").style.display="none";
 document.getElementById("home").style.display="block";
 document.querySelector(".container").style.maxWidth="100%";
-  playMusic();
+
+homePage = document.getElementById("home").innerHTML;
+
+playMusic();
 
 }else{
-document.getElementById("message").innerHTML="❌ Wrong Password";
-
+...
 }
-
-}
-</script>
-  
-<script src="script.js"></script>
-
-</body>
-</html>
