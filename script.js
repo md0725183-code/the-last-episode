@@ -690,16 +690,15 @@ document.getElementById("home").innerHTML;
 }
 function backHome(){
 
-const music=document.getElementById("bgMusic");
+    const music = document.getElementById("bgMusic");
 
-document.querySelector(".container").innerHTML=
-document.getElementById("home").innerHTML;
+    document.querySelector(".container").innerHTML =
+    document.getElementById("home").innerHTML;
 
-document.querySelector(".container").style.maxWidth="100%";
+    document.querySelector(".container").style.maxWidth = "100%";
 
-if(music){
-music.play().catch(()=>{});
+    if(music){
+        music.play().catch(()=>{});
+    }
+
 }
-
-}
-
