@@ -154,3 +154,38 @@ text-shadow:
 .heroTitle{
 animation:titleGlow 3s ease-in-out infinite;
 }
+.heroBanner{
+position:relative;
+overflow:hidden;
+}
+
+.heroBanner::before{
+content:"";
+position:absolute;
+top:-20%;
+left:-60%;
+width:50%;
+height:140%;
+background:linear-gradient(
+90deg,
+transparent,
+rgba(229,9,20,.18),
+transparent
+);
+transform:rotate(20deg);
+animation:lightSweep 7s linear infinite;
+pointer-events:none;
+z-index:2;
+}
+
+@keyframes lightSweep{
+
+0%{
+left:-70%;
+}
+
+100%{
+left:140%;
+}
+
+}
