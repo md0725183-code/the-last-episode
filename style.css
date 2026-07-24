@@ -449,3 +449,45 @@ rgba(0,0,0,.98));
 padding-bottom:18px;
 
 }
+.topBar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:linear-gradient(to bottom,
+rgba(0,0,0,.95),
+rgba(0,0,0,.25),
+transparent);
+z-index:9999;
+backdrop-filter:blur(8px);
+}
+
+.topLogo{
+font-size:28px;
+font-weight:bold;
+font-family:'Cinzel',serif;
+color:#E50914;
+letter-spacing:2px;
+text-shadow:0 0 12px rgba(229,9,20,.6);
+}
+
+.topIcons{
+display:flex;
+gap:18px;
+font-size:24px;
+color:white;
+}
+
+.topIcons span{
+cursor:pointer;
+transition:.3s;
+}
+
+.topIcons span:hover{
+transform:scale(1.15);
+color:#E50914;
+}
