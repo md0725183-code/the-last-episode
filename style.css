@@ -284,3 +284,25 @@ opacity:1;
 }
 
 }
+.introLine{
+width:0;
+height:4px;
+background:#E50914;
+margin:25px auto;
+border-radius:50px;
+box-shadow:0 0 20px #E50914;
+animation:lineReveal 1.2s forwards;
+animation-delay:1.2s;
+}
+
+@keyframes lineReveal{
+
+0%{
+width:0;
+}
+
+100%{
+width:220px;
+}
+
+}
