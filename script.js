@@ -667,7 +667,7 @@ style="padding:15px 30px;background:#E50914;color:white;border:none;border-radiu
 🔁 Watch Again
 </button>
 
-<button onclick="location.reload()"
+<button onclick="backHome()"
 style="padding:15px 30px;background:#444;color:white;border:none;border-radius:10px;font-size:18px;">
 🏠 Back to Home
 </button>
@@ -686,6 +686,20 @@ function home(){
 
 document.querySelector(".container").innerHTML =
 document.getElementById("home").innerHTML;
+
+}
+function backHome(){
+
+const music=document.getElementById("bgMusic");
+
+document.querySelector(".container").innerHTML=
+document.getElementById("home").innerHTML;
+
+document.querySelector(".container").style.maxWidth="100%";
+
+if(music){
+music.play().catch(()=>{});
+}
 
 }
 
