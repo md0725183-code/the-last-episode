@@ -401,7 +401,7 @@ padding:14px;border-radius:8px;font-size:20px;cursor:pointer;">
 <small>🎬 Final Letter</small>
 </span>
 </div>
-
+</div>   
   <h2 style="text-align:left;margin:20px 0 10px;">
 🔥 Trending Now
 </h2>
@@ -684,11 +684,10 @@ style="margin-top:40px;padding:15px 35px;background:#E50914;color:#fff;border:no
 `;
 }
 let homePage = "";
-  
+
 function checkPassword(){
 
 let p = document.getElementById("pass").value;
-
 
 if(p==="01082026"){
 
@@ -701,5 +700,9 @@ homePage = document.getElementById("home").innerHTML;
 playMusic();
 
 }else{
-...
+
+document.getElementById("message").innerHTML="❌ Wrong Password";
+
+}
+
 }
