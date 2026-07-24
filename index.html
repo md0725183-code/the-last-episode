@@ -710,11 +710,13 @@ document.getElementById("message").innerHTML="❌ Wrong Password";
 }
   function showTudum(){
 
-document.getElementById("tudumIntro").style.display="flex";
+const intro=document.getElementById("introScreen");
+
+intro.style.display="flex";
 
 setTimeout(()=>{
 
-document.getElementById("tudumIntro").style.display="none";
+intro.style.display="none";
 
 document.getElementById("home").style.display="block";
 
