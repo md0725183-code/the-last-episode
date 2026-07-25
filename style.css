@@ -1067,7 +1067,55 @@ cursor:pointer;
     radial-gradient(circle,transparent 40%,rgba(0,0,0,.45) 100%);
     pointer-events:none;
 }
+.container{
+    animation:pageReveal .8s ease;
+}
 
+@keyframes pageReveal{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.nextBtn{
+    position:relative;
+    overflow:hidden;
+}
+
+.nextBtn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:60%;
+    height:100%;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+    transition:.8s;
+}
+
+.nextBtn:hover::before{
+    left:150%;
+}
+
+.heroImage{
+    transition:transform 8s ease;
+}
+
+.heroPhoto:hover .heroImage{
+    transform:scale(1.1);
+}
+
+.storyCard{
+    backdrop-filter:blur(8px);
+}
 
 
 
