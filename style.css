@@ -1865,3 +1865,50 @@ animation:fadeIn 1s;
 z-index:2;
 
 }
+/* ===== FINAL EPISODE ===== */
+
+.finalIntro{
+
+background:#000;
+
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+padding:30px;
+
+text-align:center;
+
+}
+
+.netflixFinal{
+
+color:#E50914;
+
+font-size:18px;
+
+letter-spacing:8px;
+
+margin-bottom:25px;
+
+animation:fadeIn 2s;
+
+}
+
+.finalTitle{
+
+font-size:48px;
+
+color:white;
+
+margin-bottom:35px;
+
+animation:fadeIn 2s;
+
+}
