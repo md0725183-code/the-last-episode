@@ -629,7 +629,7 @@ A Special Day Has Arrived...
 
 <h2>💖 My Birthday Wish For You 💖</h2>
 
-<p>
+<p id="wishText"></p>
 Happy Birthday Meri Pyari Musfira ❤️<br><br>
 
 Aaj ka din mere liye bahut khaas hai, kyunki aaj Allah ne is duniya ko tum jaisi khoobsurat aur nek dil insaan se nawaza tha.
@@ -680,6 +680,33 @@ Allah tumhe hamesha khush rakhe aur hamari mohabbat hamesha salamat rahe. 🎂�
 </div>
 
 `;
+  const message=`Happy Birthday Meri Pyari Musfira ❤️
+
+Aaj ka din mere liye bahut khaas hai.
+
+Main dua karta hoon ke Allah tumhe hamesha sehat, sukoon, lambi umr aur har khushi ata farmaye.
+
+Tum meri zindagi ki sabse khoobsurat ne'mat ho.
+
+❤️ I Love You Forever ❤️`;
+
+let i=0;
+
+function typeWish(){
+
+if(i<message.length){
+
+document.getElementById("wishText").innerHTML+=message.charAt(i);
+
+i++;
+
+setTimeout(typeWish,40);
+
+}
+
+}
+
+setTimeout(typeWish,2500);
 }
   function episode5(){
 document.querySelector(".container").innerHTML=`
