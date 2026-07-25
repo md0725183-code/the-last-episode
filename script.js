@@ -667,9 +667,16 @@ style="padding:15px 30px;background:#E50914;color:white;border:none;border-radiu
 🔁 Watch Again
 </button>
 
-<button onclick="backHome()"
-style="padding:15px 30px;background:#444;color:white;border:none;border-radius:10px;font-size:18px;">
-🏠 Back to Home
+<button onclick="episode3Intro()"
+style="padding:15px 30px;
+background:#E50914;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;">
+
+❤️ Watch Episode 3
+
 </button>
 
 </div>
