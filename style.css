@@ -1295,3 +1295,79 @@ opacity:1;
 }
 
 }
+#birthdayStage::after{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:radial-gradient(
+circle,
+transparent 45%,
+rgba(0,0,0,.55) 100%
+);
+
+pointer-events:none;
+
+z-index:2;
+
+}
+.dust{
+
+position:absolute;
+
+width:4px;
+height:4px;
+
+background:#FFD700;
+
+border-radius:50%;
+
+box-shadow:0 0 10px gold;
+
+animation:dustFloat 8s linear infinite;
+
+}
+
+.d1{left:12%;top:90%;}
+.d2{left:28%;top:96%;animation-delay:1s;}
+.d3{left:50%;top:92%;animation-delay:2s;}
+.d4{left:72%;top:95%;animation-delay:3s;}
+.d5{left:90%;top:90%;animation-delay:4s;}
+
+@keyframes dustFloat{
+
+0%{
+transform:translateY(0);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-110vh);
+opacity:0;
+}
+
+}
+.endingLine{
+
+text-align:center;
+
+color:#FFD700;
+
+font-size:18px;
+
+margin-bottom:15px;
+
+font-style:italic;
+
+text-shadow:0 0 12px gold;
+
+animation:fadeWish 2s ease;
+
+}
