@@ -1534,3 +1534,96 @@ font-size:18px;
 cursor:pointer;
 
 }
+/* ===== OUR FIRST DUA ===== */
+
+.duaScene{
+
+position:relative;
+
+overflow:hidden;
+
+background:linear-gradient(#060b2b,#000);
+
+min-height:100vh;
+
+}
+
+.moon{
+
+font-size:70px;
+
+position:absolute;
+
+top:30px;
+
+right:40px;
+
+animation:moonGlow 3s infinite alternate;
+
+}
+
+@keyframes moonGlow{
+
+from{
+
+filter:drop-shadow(0 0 8px white);
+
+}
+
+to{
+
+filter:drop-shadow(0 0 25px gold);
+
+}
+
+}
+
+.stars{
+
+position:absolute;
+
+top:80px;
+
+left:20px;
+
+right:20px;
+
+font-size:22px;
+
+letter-spacing:18px;
+
+animation:twinkle 2s infinite;
+
+}
+
+@keyframes twinkle{
+
+50%{
+
+opacity:.35;
+
+}
+
+}
+
+.mosque{
+
+font-size:90px;
+
+text-align:center;
+
+margin-top:170px;
+
+animation:floatMosque 3s ease-in-out infinite;
+
+}
+
+@keyframes floatMosque{
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+}
