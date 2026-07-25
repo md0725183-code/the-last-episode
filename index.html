@@ -1055,6 +1055,72 @@ Next →
 
   }
   
+  function episode5Prayer(){
+
+document.querySelector(".container").innerHTML=`
+
+<div class="episode-page prayerScene">
+
+<div class="lightGlow"></div>
+
+<h2 class="episode-subtitle">
+
+🤲 One Last Prayer
+
+</h2>
+
+<p id="prayerText" class="episode-text"></p>
+
+<button id="continueFinal"
+class="next-btn"
+style="display:none;"
+onclick="episode6()">
+
+🎬 Continue to The Final Episode
+
+</button>
+
+</div>
+
+`;
+
+const message=`Ya Allah...
+
+If she's written for me...
+
+Protect her...
+
+Bless her...
+
+Fill her life with happiness...
+
+Keep her smiling...
+
+And unite us in the most beautiful way...
+
+Ameen. ❤️`;
+
+let i=0;
+
+const target=document.getElementById("prayerText");
+
+const timer=setInterval(()=>{
+
+target.innerHTML+=message.charAt(i);
+
+i++;
+
+if(i>=message.length){
+
+clearInterval(timer);
+
+document.getElementById("continueFinal").style.display="block";
+
+}
+
+},40);
+
+}
 function episode6(){
 document.querySelector(".container").innerHTML=`
 
