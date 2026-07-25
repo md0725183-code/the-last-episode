@@ -774,3 +774,225 @@ cursor:pointer;">
 `;
 
 }
+function episode3Scene1(){
+
+document.querySelector(".container").innerHTML=`
+
+<div class="movieScene" style="
+background:black;
+min-height:100vh;
+color:white;
+text-align:center;
+padding:20px;">
+
+<img src="photo12.jpg" class="moviePhoto">
+
+<div style="
+width:100%;
+max-width:420px;
+margin:20px auto 30px auto;">
+
+<div style="
+height:8px;
+background:#333;
+border-radius:20px;
+overflow:hidden;">
+
+<div style="
+width:20%;
+height:100%;
+background:#E50914;">
+</div>
+
+</div>
+
+<p style="
+margin-top:8px;
+color:#aaa;
+font-size:14px;">
+
+Scene 1 of 5
+
+</p>
+
+</div>
+
+<h1 style="
+margin-top:25px;
+color:#E50914;">
+
+❤️ Meet My Future Wife ❤️
+
+</h1>
+
+<p style="
+font-size:20px;
+line-height:1.9;
+margin-top:25px;">
+
+Some people impress the world...
+
+But one person quietly captures a heart.
+
+❤️
+
+She isn't just beautiful...
+
+She is calm...
+
+She is kind...
+
+She is respectful...
+
+And she is the answer to countless duas.
+
+Every beautiful chapter of my future begins with her.
+
+🤍
+
+</p>
+
+<div class="movieControls">
+
+<button onclick="episode3Intro()"
+style="
+padding:12px 24px;
+background:#444;
+color:white;
+border:none;
+border-radius:10px;
+margin-right:10px;">
+
+⬅ Previous
+
+</button>
+
+<button onclick="episode3Scene2()"
+style="
+padding:12px 24px;
+background:#E50914;
+color:white;
+border:none;
+border-radius:10px;">
+
+Next Scene ➜
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+}
+function episode3Scene2(){
+
+document.querySelector(".container").innerHTML=`
+
+<div class="movieScene" style="
+background:black;
+min-height:100vh;
+color:white;
+text-align:center;
+padding:20px;">
+
+<img src="photo12.jpg" class="moviePhoto">
+
+<div style="
+width:100%;
+max-width:420px;
+margin:20px auto 30px;">
+
+<div style="
+height:8px;
+background:#333;
+border-radius:20px;
+overflow:hidden;">
+
+<div style="
+width:40%;
+height:100%;
+background:#E50914;">
+</div>
+
+</div>
+
+<p style="
+margin-top:8px;
+color:#aaa;
+font-size:14px;">
+Scene 2 of 5
+</p>
+
+</div>
+
+<h1 style="
+color:#E50914;
+margin-bottom:25px;">
+✨ Character Profile
+</h1>
+
+<div class="profileCard">
+
+<div class="profileRow">
+<span>👤 Name</span>
+<b>Musfira</b>
+</div>
+
+<div class="profileRow">
+<span>🤍 Nature</span>
+<b>Kind & Respectful</b>
+</div>
+
+<div class="profileRow">
+<span>😊 Smile</span>
+<b>My Favourite</b>
+</div>
+
+<div class="profileRow">
+<span>🌸 Beauty</span>
+<b>Elegant & Graceful</b>
+</div>
+
+<div class="profileRow">
+<span>🤲 Status</span>
+<b>The Girl I Prayed For ❤️</b>
+</div>
+
+</div>
+
+<div class="movieControls">
+
+<button onclick="episode3Scene1()"
+style="
+padding:12px 24px;
+background:#444;
+color:white;
+border:none;
+border-radius:10px;
+margin-right:10px;">
+
+⬅ Previous
+
+</button>
+
+<button onclick="episode3Scene3()"
+style="
+padding:12px 24px;
+background:#E50914;
+color:white;
+border:none;
+border-radius:10px;">
+
+Next Scene ➜
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+}
