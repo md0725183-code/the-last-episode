@@ -1694,3 +1694,48 @@ top:120px;
 right:8%;
 
 }
+/* ===== THROUGH EVERY SEASON ===== */
+
+.seasonScene{
+
+min-height:100vh;
+
+transition:1.2s;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+padding:30px;
+
+}
+
+#seasonName{
+
+font-size:34px;
+
+font-weight:bold;
+
+margin-bottom:40px;
+
+color:white;
+
+text-shadow:0 0 15px black;
+
+animation:seasonPulse 2s infinite;
+
+}
+
+@keyframes seasonPulse{
+
+50%{
+
+transform:scale(1.08);
+
+}
+
+}
