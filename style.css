@@ -1912,3 +1912,46 @@ margin-bottom:35px;
 animation:fadeIn 2s;
 
 }
+/* ===== TO BE CONTINUED ===== */
+
+.endingScene{
+
+background:#000;
+
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+.endingTitle{
+
+font-size:46px;
+
+color:#E50914;
+
+animation:pulse 2.5s infinite;
+
+text-shadow:0 0 25px rgba(229,9,20,.7);
+
+}
+
+@keyframes pulse{
+
+50%{
+
+transform:scale(1.05);
+
+}
+
+}
