@@ -710,7 +710,11 @@ animation-delay:2s;
 
 .cakeEmoji{
 
-font-size:120px;
+font-size:140px;
+
+filter:
+drop-shadow(0 0 15px gold)
+drop-shadow(0 0 35px #ff4d6d);
 
 animation:cakeBounce 2s infinite;
 
@@ -729,8 +733,34 @@ margin-top:10px;
 text-shadow:
 0 0 15px #ff4d6d,
 0 0 30px #ff4d6d;
+  animation:titlePulse 2s ease-in-out infinite;
+.confetti{
 
 }
+
+  @keyframes titlePulse{
+
+0%,100%{
+
+transform:scale(1);
+
+text-shadow:
+0 0 10px #fff,
+0 0 25px #ff4d6d;
+
+}
+
+50%{
+
+transform:scale(1.05);
+
+text-shadow:
+0 0 20px gold,
+0 0 45px #ff4d6d;
+
+}
+
+  }
 
 @keyframes cakeReveal{
 
@@ -759,7 +789,6 @@ transform:translateY(-12px);
 }
 
 }
-.confetti{
 
 position:absolute;
 top:-20px;
@@ -910,5 +939,41 @@ white-space:pre-line;
 font-size:18px;
 
 line-height:1.9;
+
+}
+#birthdayStage::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:
+radial-gradient(circle at center,
+rgba(255,215,0,.22),
+transparent 70%);
+
+animation:goldPulse 3s ease-in-out infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes goldPulse{
+
+0%,100%{
+
+opacity:.4;
+transform:scale(1);
+
+}
+
+50%{
+
+opacity:1;
+transform:scale(1.08);
+
+}
 
 }
