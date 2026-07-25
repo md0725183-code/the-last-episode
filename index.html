@@ -698,7 +698,26 @@ setTimeout(typeWish,40);
 }
 
 setTimeout(typeWish,5000);
+  
+const btn = document.getElementById("continueBtn");
+btn.style.display = "none";
 
+const timer = setInterval(() => {
+
+if(i >= message.length){
+
+clearInterval(timer);
+
+btn.style.display = "block";
+
+btn.scrollIntoView({
+behavior:"smooth",
+block:"center"
+});
+
+}
+
+},100);
 }
   
 
