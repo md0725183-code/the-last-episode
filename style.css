@@ -1135,3 +1135,80 @@ translateY(0);
 }
 
 }
+#continueStory{
+
+position:absolute;
+
+bottom:20px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+opacity:0;
+
+animation:showButton 2s forwards;
+
+animation-delay:7s;
+
+z-index:40;
+
+}
+
+#continueStory button{
+
+padding:15px 35px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:50px;
+
+background:#E50914;
+
+color:white;
+
+cursor:pointer;
+
+font-weight:bold;
+
+box-shadow:
+0 0 15px rgba(229,9,20,.8);
+
+transition:.3s;
+
+}
+
+#continueStory button:hover{
+
+transform:scale(1.08);
+
+box-shadow:
+0 0 30px rgba(229,9,20,1);
+
+}
+
+@keyframes showButton{
+
+from{
+
+opacity:0;
+
+transform:
+translateX(-50%)
+translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:
+translateX(-50%)
+translateY(0);
+
+}
+
+}
