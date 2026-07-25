@@ -996,3 +996,108 @@ Next Scene ➜
 `;
 
 }
+function episode3Scene3(){
+
+document.querySelector(".container").innerHTML=`
+
+<div class="movieScene" style="
+background:black;
+min-height:100vh;
+color:white;
+text-align:center;
+padding:20px;">
+
+<img src="photo12.jpg" class="moviePhoto">
+
+<div style="
+width:100%;
+max-width:420px;
+margin:20px auto 30px;">
+
+<div style="
+height:8px;
+background:#333;
+border-radius:20px;
+overflow:hidden;">
+
+<div style="
+width:60%;
+height:100%;
+background:#E50914;">
+</div>
+
+</div>
+
+<p style="
+margin-top:8px;
+color:#aaa;
+font-size:14px;">
+
+Scene 3 of 5
+
+</p>
+
+</div>
+
+<h1 style="
+color:#E50914;
+margin-bottom:25px;">
+
+❤️ Things I Love About You ❤️
+
+</h1>
+
+<div class="loveCard">
+🤍 Your beautiful smile that brightens every moment.
+</div>
+
+<div class="loveCard">
+🌸 The kindness and respect you show to everyone.
+</div>
+
+<div class="loveCard">
+✨ The peace I feel whenever I think about you.
+</div>
+
+<div class="loveCard">
+🤲 The way you brought me closer to thanking Allah every day.
+</div>
+
+<div class="loveCard">
+❤️ Simply... being YOU.
+</div>
+
+<div class="movieControls">
+
+<button onclick="episode3Scene2()"
+style="
+padding:12px 24px;
+background:#444;
+color:white;
+border:none;
+border-radius:10px;
+margin-right:10px;">
+
+⬅ Previous
+
+</button>
+
+<button onclick="episode3Scene4()"
+style="
+padding:12px 24px;
+background:#E50914;
+color:white;
+border:none;
+border-radius:10px;">
+
+Next Scene ➜
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+}
