@@ -958,7 +958,65 @@ font-size:18px;
 border-radius:12px;
 cursor:pointer;
 }
+.heroPhoto{
+    animation:heroFade 2s ease;
+}
 
+.storyCard{
+    animation:storyFade 2.5s ease;
+}
+
+.heroOverlay h1{
+    animation:titleFloat 3s ease-in-out infinite;
+}
+
+@keyframes heroFade{
+    from{
+        opacity:0;
+        transform:scale(1.08);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+@keyframes storyFade{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes titleFloat{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-6px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+.nextBtn,
+.backBtn{
+    transition:.35s;
+}
+
+.nextBtn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 25px rgba(229,9,20,.6);
+}
+
+.backBtn:hover{
+    transform:translateY(-3px);
+}
 
 
 
