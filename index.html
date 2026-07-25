@@ -932,6 +932,81 @@ Next →
 `;
 
   }
+  function episode5Season(){
+
+document.querySelector(".container").innerHTML=`
+
+<div class="episode-page seasonScene">
+
+<div id="seasonName">☀️ Sunny Days</div>
+
+<h2 class="episode-subtitle">
+
+❤️ Through Every Season
+
+</h2>
+
+<p class="episode-text">
+
+In happiness...
+
+and in sadness...
+
+In easy days...
+
+and in difficult ones...
+
+I pray...
+
+we always choose each other.
+
+Forever.
+
+❤️
+
+</p>
+
+<button class="next-btn"
+
+onclick="episode5Old()">
+
+Next →
+
+</button>
+
+</div>
+
+`;
+
+const seasons=[
+"☀️ Sunny Days",
+"🌧️ Rainy Days",
+"🍂 Autumn",
+"❄️ Winter",
+"🌸 Spring"
+];
+
+const colours=[
+"#FFD54F",
+"#4FC3F7",
+"#A1887F",
+"#90CAF9",
+"#81C784"
+];
+
+let i=0;
+
+setInterval(()=>{
+
+i=(i+1)%seasons.length;
+
+document.getElementById("seasonName").innerText=seasons[i];
+
+document.querySelector(".seasonScene").style.background=colours[i];
+
+},2500);
+
+}
   
 function episode6(){
 document.querySelector(".container").innerHTML=`
