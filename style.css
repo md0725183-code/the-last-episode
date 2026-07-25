@@ -1153,6 +1153,10 @@ z-index:40;
 }
 
 #continueStory button{
+  
+background:linear-gradient(45deg,#E50914,#ff4d6d);
+
+  }
 
 padding:15px 35px;
 
