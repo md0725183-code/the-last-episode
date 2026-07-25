@@ -836,7 +836,8 @@ font-size:30px;
 animation:heartFloat 6s linear infinite;
 
 opacity:.8;
-
+  
+filter:drop-shadow(0 0 10px #ff4d6d);
 }
 
 .h1{left:15%;}
@@ -1258,6 +1259,38 @@ opacity:1;
 transform:scale(8);
 
 opacity:0;
+
+}
+
+}
+.fairy{
+
+position:absolute;
+
+width:10px;
+height:10px;
+
+background:#FFD700;
+
+border-radius:50%;
+
+box-shadow:0 0 18px gold;
+
+animation:fairyBlink 2s infinite alternate;
+
+}
+
+@keyframes fairyBlink{
+
+from{
+
+opacity:.3;
+
+}
+
+to{
+
+opacity:1;
 
 }
 
