@@ -865,7 +865,26 @@ padding:14px 28px;
 }
 
 }
+html,
+body{
+height:auto !important;
+overflow-y:auto !important;
+overflow-x:hidden !important;
+}
 
+.container{
+height:auto !important;
+min-height:100vh !important;
+overflow:visible !important;
+}
+
+#birthdayStage{
+position:relative !important;
+height:auto !important;
+min-height:100vh !important;
+overflow:visible !important;
+padding-bottom:150px !important;
+}
 
 
 
