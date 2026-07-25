@@ -1048,3 +1048,90 @@ opacity:1;
 }
 
 }
+#grandReveal{
+
+position:absolute;
+
+top:8%;
+
+left:50%;
+
+transform:translateX(-50%);
+
+text-align:center;
+
+width:90%;
+
+opacity:0;
+
+animation:grandReveal 2s forwards;
+
+animation-delay:5s;
+
+z-index:30;
+
+}
+
+#grandReveal h1{
+
+font-size:42px;
+
+color:#FFD700;
+
+font-family:'Cinzel',serif;
+
+text-shadow:
+0 0 15px gold,
+0 0 35px gold;
+
+margin:0;
+
+}
+
+#grandReveal h2{
+
+margin-top:10px;
+
+font-size:26px;
+
+color:white;
+
+}
+
+#grandReveal h3{
+
+margin-top:8px;
+
+font-size:34px;
+
+color:#ff4d6d;
+
+text-shadow:
+0 0 12px #ff4d6d,
+0 0 28px #ff4d6d;
+
+}
+
+@keyframes grandReveal{
+
+0%{
+
+opacity:0;
+
+transform:
+translateX(-50%)
+translateY(-40px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:
+translateX(-50%)
+translateY(0);
+
+}
+
+}
