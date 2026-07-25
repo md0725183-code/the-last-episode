@@ -695,3 +695,82 @@ document.querySelector(".container").innerHTML = homePage;
 document.querySelector(".container").style.maxWidth = "100%";
 
 }
+function episode3Intro(){
+
+document.querySelector(".container").innerHTML=`
+
+<div style="
+background:black;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:25px;
+animation:fadeIn 1.5s;">
+
+<div style="
+color:#E50914;
+font-size:18px;
+letter-spacing:5px;
+margin-bottom:25px;">
+NETFLIX ORIGINAL
+</div>
+
+<h1 style="
+font-size:46px;
+color:white;
+margin-bottom:10px;">
+THE LAST EPISODE
+</h1>
+
+<h2 style="
+color:#E50914;
+margin-top:20px;">
+Episode 3
+</h2>
+
+<p style="
+font-size:28px;
+color:white;
+margin-top:20px;
+line-height:1.6;">
+
+❤️ The Girl Who Stole My Heart ❤️
+
+</p>
+
+<p style="
+color:#bbb;
+margin-top:35px;
+font-size:18px;
+max-width:550px;
+line-height:1.8;">
+
+Some people enter our life...
+
+And silently become the most beautiful part of it.
+
+</p>
+
+<button onclick="episode3Scene1()"
+style="
+margin-top:55px;
+padding:16px 40px;
+background:#E50914;
+border:none;
+border-radius:12px;
+font-size:20px;
+color:white;
+cursor:pointer;">
+
+▶ Start Episode
+
+</button>
+
+</div>
+
+`;
+
+}
