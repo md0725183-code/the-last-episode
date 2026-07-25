@@ -1101,3 +1101,104 @@ Next Scene ➜
 `;
 
 }
+function episode3Scene4(){
+
+document.querySelector(".container").innerHTML=`
+
+<div class="movieScene" style="
+background:black;
+min-height:100vh;
+color:white;
+text-align:center;
+padding:20px;">
+
+<img src="photo12.jpg" class="moviePhoto">
+
+<div style="
+width:100%;
+max-width:420px;
+margin:20px auto 30px;">
+
+<div style="
+height:8px;
+background:#333;
+border-radius:20px;
+overflow:hidden;">
+
+<div style="
+width:80%;
+height:100%;
+background:#E50914;">
+</div>
+
+</div>
+
+<p style="
+margin-top:8px;
+color:#aaa;
+font-size:14px;">
+Scene 4 of 5
+</p>
+
+</div>
+
+<h1 style="
+color:#E50914;
+margin-bottom:25px;">
+🤲 My Promises To You
+</h1>
+
+<div class="promiseCard">
+❤️ I promise to respect you in every situation.
+</div>
+
+<div class="promiseCard">
+🤝 I promise to stand beside you in happiness and in hardship.
+</div>
+
+<div class="promiseCard">
+🌹 I promise to make you smile whenever life becomes difficult.
+</div>
+
+<div class="promiseCard">
+🤲 I promise to keep Allah at the centre of our marriage.
+</div>
+
+<div class="promiseCard">
+💍 I promise to love you, honour you and choose you every single day.
+</div>
+
+<div class="movieControls">
+
+<button onclick="episode3Scene3()"
+style="
+padding:12px 24px;
+background:#444;
+color:white;
+border:none;
+border-radius:10px;
+margin-right:10px;">
+
+⬅ Previous
+
+</button>
+
+<button onclick="episode3Scene5()"
+style="
+padding:12px 24px;
+background:#E50914;
+color:white;
+border:none;
+border-radius:10px;">
+
+Next Scene ➜
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+}
