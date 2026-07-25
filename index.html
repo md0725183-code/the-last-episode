@@ -1267,6 +1267,77 @@ One Last Message →
 `;
 
 }
+  function episode6Final(){
+
+document.querySelector(".container").innerHTML=`
+
+<div class="episode-page finalMessage">
+
+<h1 class="finalEnding">
+
+Thank You...
+
+❤️
+
+</h1>
+
+<p id="lastWords" class="episode-text"></p>
+
+</div>
+
+`;
+
+const message=`If today made you smile...
+
+then this little surprise
+has already achieved its purpose.
+
+Thank you for being
+the most beautiful part
+of my future.
+
+May Allah protect your smile...
+
+bless your life...
+
+and keep us together
+in goodness.
+
+Happy Birthday, Musfira.
+
+See you...
+
+In Sha Allah. 🤍
+
+— Mohammed Hassan`;
+
+let i=0;
+
+const target=document.getElementById("lastWords");
+
+const timer=setInterval(()=>{
+
+target.innerHTML+=message.charAt(i);
+
+i++;
+
+if(i>=message.length){
+
+clearInterval(timer);
+
+setTimeout(()=>{
+
+document.body.style.transition="2s";
+
+document.body.style.opacity="0";
+
+},5000);
+
+}
+
+},35);
+
+}
 function episode7(){
 document.querySelector(".container").innerHTML=`
 
