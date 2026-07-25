@@ -1202,3 +1202,120 @@ Next Scene ➜
 `;
 
 }
+function episode3Scene5(){
+
+document.querySelector(".container").innerHTML=`
+
+<div class="movieScene" style="
+background:black;
+min-height:100vh;
+color:white;
+text-align:center;
+padding:20px;">
+
+<img src="photo12.jpg" class="moviePhoto">
+
+<div style="
+width:100%;
+max-width:420px;
+margin:20px auto 30px;">
+
+<div style="
+height:8px;
+background:#333;
+border-radius:20px;
+overflow:hidden;">
+
+<div style="
+width:100%;
+height:100%;
+background:#E50914;">
+</div>
+
+</div>
+
+<p style="
+margin-top:8px;
+color:#aaa;
+font-size:14px;">
+
+Scene 5 of 5 • Complete ✓
+
+</p>
+
+</div>
+
+<h1 style="
+margin-top:25px;
+color:#E50914;">
+
+❤️ The Girl Who Stole My Heart ❤️
+
+</h1>
+
+<p style="
+font-size:20px;
+line-height:2;
+margin-top:25px;
+color:#ddd;">
+
+Sometimes...
+
+Allah writes a story long before we understand it.
+
+From childhood memories...
+
+to countless duas...
+
+to the day our Nikah was written...
+
+every step led me to you.
+
+You are not just someone I love...
+
+You are my peace...
+
+my answered prayer...
+
+and my favourite blessing from Allah.
+
+And this is only the beginning of our forever...
+
+🤍
+
+</p>
+
+<div class="movieControls">
+
+<button onclick="episode3Scene4()"
+style="
+padding:12px 24px;
+background:#444;
+color:white;
+border:none;
+border-radius:10px;
+margin-right:10px;">
+
+⬅ Previous
+
+</button>
+
+<button onclick="episode4()"
+style="
+padding:12px 24px;
+background:#E50914;
+color:white;
+border:none;
+border-radius:10px;">
+
+🎂 Continue To Birthday
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+}
