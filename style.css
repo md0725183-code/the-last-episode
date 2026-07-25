@@ -885,7 +885,18 @@ min-height:100vh !important;
 overflow:visible !important;
 padding-bottom:150px !important;
 }
+html,
+body,
+.container,
+#home{
+height:auto !important;
+min-height:100vh !important;
+overflow:visible !important;
+}
 
+body{
+overflow-y:auto !important;
+}
 
 
 
