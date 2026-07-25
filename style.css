@@ -1377,3 +1377,150 @@ text-shadow:0 0 12px gold;
 animation:fadeWish 2s ease;
 
 }
+#cakeArea{
+display:flex;
+justify-content:center;
+margin-top:80px;
+}
+
+#birthdayCake{
+position:relative;
+width:220px;
+height:230px;
+animation:cakeBounce 2.5s ease-in-out infinite;
+}
+
+.cakeBottom,
+.cakeMiddle,
+.cakeTop{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+border-radius:18px;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(10px);
+border:2px solid rgba(255,255,255,.25);
+box-shadow:0 0 25px rgba(255,215,0,.35);
+}
+
+.cakeBottom{
+bottom:0;
+width:220px;
+height:70px;
+}
+
+.cakeMiddle{
+bottom:68px;
+width:170px;
+height:60px;
+}
+
+.cakeTop{
+bottom:126px;
+width:120px;
+height:50px;
+}
+
+.candles{
+position:absolute;
+bottom:176px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:12px;
+}
+
+.candle{
+width:8px;
+height:35px;
+background:#fff;
+border-radius:4px;
+position:relative;
+}
+
+.candle::before{
+content:"";
+position:absolute;
+top:-12px;
+left:50%;
+transform:translateX(-50%);
+width:10px;
+height:14px;
+background:gold;
+border-radius:50% 50% 50% 50%;
+box-shadow:0 0 18px gold;
+animation:flame .6s infinite alternate;
+}
+
+@keyframes flame{
+from{
+transform:translateX(-50%) scale(.9);
+opacity:.8;
+}
+to{
+transform:translateX(-50%) scale(1.15);
+opacity:1;
+}
+}
+
+@keyframes cakeBounce{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-8px);
+}
+}
+#birthdayText{
+opacity:0;
+text-align:center;
+margin-top:30px;
+animation:textReveal 1.5s ease forwards;
+animation-delay:3s;
+}
+
+#birthdayWish{
+opacity:0;
+animation:cardReveal 1.5s ease forwards;
+animation-delay:4.5s;
+}
+
+#continueBtn{
+margin-top:20px;
+padding:15px 35px;
+border:none;
+border-radius:40px;
+background:linear-gradient(45deg,#E50914,#ff4d6d);
+color:#fff;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 0 25px rgba(229,9,20,.6);
+transition:.35s;
+}
+
+#continueBtn:hover{
+transform:scale(1.05);
+}
+
+@keyframes textReveal{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes cardReveal{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
