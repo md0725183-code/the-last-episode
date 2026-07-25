@@ -1739,3 +1739,42 @@ transform:scale(1.08);
 }
 
 }
+/* ===== GROWING OLD TOGETHER ===== */
+
+.oldScene{
+
+background:linear-gradient(#1b1b1b,#000);
+
+min-height:100vh;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+.hourglass{
+
+font-size:90px;
+
+margin-top:40px;
+
+animation:hourglassMove 3s ease-in-out infinite;
+
+}
+
+@keyframes hourglassMove{
+
+0%{
+transform:rotate(0deg);
+}
+
+50%{
+transform:rotate(180deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
