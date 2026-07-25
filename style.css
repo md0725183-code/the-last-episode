@@ -589,75 +589,21 @@ z-index:10;
 }
 
 #birthdayCake{
-position:relative;
-width:220px;
-height:230px;
-filter:drop-shadow(0 0 35px rgba(255,215,0,.75));
-animation:cakeBounce 2.5s ease-in-out infinite;
+    width:240px;
+    max-width:85%;
+    display:block;
+    margin:auto;
+    animation:cakeBounce 2.5s ease-in-out infinite;
+    filter:drop-shadow(0 0 30px rgba(255,215,0,.7));
 }
 
-.cakeBottom,
-.cakeMiddle,
-.cakeTop{
-position:absolute;
-left:50%;
-transform:translateX(-50%);
-border-radius:18px;
-background:rgba(255,255,255,.16);
-backdrop-filter:blur(12px);
-border:2px solid rgba(255,255,255,.25);
-box-shadow:0 0 25px rgba(255,215,0,.30);
-}
-
-.cakeBottom{
-bottom:0;
-width:220px;
-height:70px;
-}
-
-.cakeMiddle{
-bottom:68px;
-width:170px;
-height:60px;
-}
-
-.cakeTop{
-bottom:126px;
-width:120px;
-height:50px;
-}
-
-.candles{
-position:absolute;
-bottom:176px;
-left:50%;
-transform:translateX(-50%);
-display:flex;
-gap:12px;
-}
-
-.candle{
-position:relative;
-width:8px;
-height:35px;
-background:#fff;
-border-radius:5px;
-}
-
-.candle::before{
-content:"";
-position:absolute;
-left:50%;
-top:-12px;
-transform:translateX(-50%);
-width:10px;
-height:14px;
-background:gold;
-border-radius:50%;
-box-shadow:
-0 0 12px gold,
-0 0 22px orange;
-animation:flame 0.6s infinite alternate;
+@keyframes cakeBounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
 }
 
 @keyframes flame{
