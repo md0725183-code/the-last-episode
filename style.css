@@ -691,13 +691,7 @@ font-size:18px;
 line-height:1.9;
 color:#fff;
 }
-else{
-document.getElementById("continueBtn").style.display="block";
-document.getElementById("continueBtn").scrollIntoView({
-behavior:"smooth",
-block:"center"
-});
-}
+
 
 @keyframes textReveal{
 from{
