@@ -1269,6 +1269,41 @@ transform:translateY(0);
 }
 }
 
+#birthdayEffects span{
+position:absolute;
+font-size:30px;
+animation:floatUp 8s linear infinite;
+opacity:.8;
+pointer-events:none;
+}
 
+.heart:nth-child(1){left:8%;bottom:-40px;animation-delay:0s;}
+.heart:nth-child(2){left:25%;bottom:-70px;animation-delay:2s;}
+.heart:nth-child(3){left:50%;bottom:-30px;animation-delay:4s;}
+.heart:nth-child(4){left:72%;bottom:-60px;animation-delay:1s;}
+.heart:nth-child(5){left:90%;bottom:-50px;animation-delay:3s;}
+
+.balloon:nth-child(6){left:15%;bottom:-100px;animation-duration:12s;}
+.balloon:nth-child(7){left:50%;bottom:-120px;animation-duration:14s;}
+.balloon:nth-child(8){left:82%;bottom:-90px;animation-duration:13s;}
+
+.confetti:nth-child(9){left:30%;bottom:-60px;}
+.confetti:nth-child(10){left:60%;bottom:-90px;}
+.confetti:nth-child(11){left:75%;bottom:-70px;}
+.confetti:nth-child(12){left:45%;bottom:-120px;}
+
+@keyframes floatUp{
+0%{
+transform:translateY(0) rotate(0deg);
+opacity:0;
+}
+15%{
+opacity:1;
+}
+100%{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+}
 
 
