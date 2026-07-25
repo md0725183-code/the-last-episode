@@ -1117,7 +1117,37 @@ cursor:pointer;
     backdrop-filter:blur(8px);
 }
 
+.profileCard{
+max-width:550px;
+margin:25px auto;
+background:#111;
+border:1px solid #222;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 0 20px rgba(229,9,20,.15);
+}
 
+.profileRow{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 20px;
+border-bottom:1px solid #222;
+font-size:18px;
+}
+
+.profileRow:last-child{
+border-bottom:none;
+}
+
+.profileRow span{
+color:#bbb;
+}
+
+.profileRow b{
+color:white;
+text-align:right;
+}
 
 
 
