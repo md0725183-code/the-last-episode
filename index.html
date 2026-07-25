@@ -747,106 +747,97 @@ block:"center"
 
 },100);
 }
-  
-
   function episode5(){
+
 document.querySelector(".container").innerHTML=`
 
-<div style="position:relative;">
-<img src="photo5.jpg" style="width:100%;height:75vh;object-fit:cover;border-radius:18px;">
+<div class="episode-page" id="futureIntro">
 
-<div style="position:absolute;left:0;right:0;bottom:0;padding:20px;background:linear-gradient(to top,black,transparent);">
-
-
-<h1 style="color:#E50914;font-size:38px;">
-📖 Episode 5 – Our Beautiful Memories ❤️
+<h1 class="episode-title">
+💍 Episode 5
 </h1>
 
-<p style="
-font-size:20px;
-line-height:2;
-color:white;
-margin-top:20px;
-animation:fadeIn 2s;
-">
+<h2 class="episode-subtitle">
+Our Future Together
+</h2>
 
-Some memories are captured in photos...
+<p class="episode-text">
 
-Some are hidden inside the heart.
+Some dreams...
 
-Every smile,
-every conversation,
-every little moment with you...
+are worth waiting for.
 
-became a beautiful chapter of my life.
+Some prayers...
 
-Whenever I look back,
+are worth repeating.
 
-I don't just remember memories...
+And some people...
 
-I remember **you.** ❤️
+are worth every moment of patience.
+
+❤️
 
 </p>
-<button onclick="backHome()"
-style="padding:12px 25px;background:#E50914;color:white;border:none;border-radius:8px;">
-⬅ Back to Home
-</button>
 
-</div>
-</div>
+<button class="next-btn"
+onclick="episode5Nikah()">
 
-<div style="padding:20px;">
-<h2 style="
-text-align:center;
-color:white;
-font-size:28px;
-margin-top:30px;
-margin-bottom:20px;">
-
-🎥 Every Moment With You Is Special ❤️
-
-</h2>
-<div id="memoryPlayer" style="text-align:center;">
-
-<button
-onclick="
-document.getElementById('memoryVideo').style.display='block';
-this.style.display='none';
-document.getElementById('memoryVideo').play();
-"
-style="
-padding:18px 45px;
-font-size:20px;
-background:#E50914;
-color:white;
-border:none;
-border-radius:50px;
-cursor:pointer;
-box-shadow:0 0 25px rgba(229,9,20,.7);
-margin-bottom:25px;
-">
-
-▶ Play Our Memory ❤️
+Begin Our Future →
 
 </button>
 
-<video
-id="memoryVideo"
-src="video1.mp4"
-controls
-style="
-display:none;
-width:100%;
-border-radius:18px;
-box-shadow:0 0 35px rgba(0,0,0,.6);
-">
-</video>
-
-</div>
 </div>
 
 `;
-  }
+
+}
+  
+function episode5Nikah(){
+
+document.querySelector(".container").innerHTML=`
+
+<div class="episode-page" id="nikahScene">
+
+<div class="ring ring-left">💍</div>
+
+<div class="ring ring-right">💍</div>
+
+<h2 class="episode-subtitle">
+
+The Day We've Been Praying For
+
+</h2>
+
+<p class="episode-text">
+
+The day Allah brings
+two hearts together...
+
+The day we've been praying for...
+
+The day I'll finally say...
+
+Alhamdulillah...
+
+She is my wife.
+
+❤️
+
+</p>
+
+<button class="next-btn"
+onclick="episode5Dua()">
+
+Next →
+
+</button>
+
+</div>
+
+`;
+
+}
+  
 function episode6(){
 document.querySelector(".container").innerHTML=`
 
