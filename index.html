@@ -1122,34 +1122,51 @@ document.getElementById("continueFinal").style.display="block";
 
 }
 function episode6(){
+
 document.querySelector(".container").innerHTML=`
 
-<div style="position:relative;">
-<img src="photo10.jpg" style="width:100%;height:75vh;object-fit:cover;border-radius:18px;">
+<div class="episode-page finalIntro">
 
-<div style="position:absolute;left:0;right:0;bottom:0;padding:20px;background:linear-gradient(to top,black,transparent);">
+<div class="netflixFinal">
 
-<h1 style="color:#E50914;">💍 Episode 6 - Our Future</h1>
+NETFLIX PRESENTS
 
-<p>
-Ab har naya sapna hum dono ka hoga.
-Har musibat saath hogi,
-har khushi saath hogi,
-aur har dua mein sirf hum honge. 💍❤️
+</div>
+
+<h1 class="finalTitle">
+
+THE FINAL EPISODE
+
+</h1>
+
+<p class="episode-text">
+
+Every beautiful story...
+
+has a final chapter.
+
+But some stories...
+
+are too beautiful...
+
+to ever truly end.
+
+❤️
+
 </p>
 
-<button onclick="backHome()"
-style="padding:12px 25px;background:#E50914;color:white;border:none;border-radius:8px;">
-⬅ Back to Home
+<button class="next-btn"
+
+onclick="episode6Scene1()">
+
+Begin Final Chapter →
+
 </button>
 
 </div>
-</div>
 
-<div style="padding:20px;">
-<video src="video2.mp4" controls style="width:100%;border-radius:15px;"></video>
-</div>
 `;
+
 }
 function episode7(){
 document.querySelector(".container").innerHTML=`
