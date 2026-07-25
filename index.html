@@ -596,26 +596,25 @@ onclick="backHome()">
   
 
 
-
 function episode4(){
 
 document.querySelector(".container").innerHTML=`
 
 <div id="birthdayIntro">
+
 <h1 class="birthdayIntroText">
-A Special Day Has Arrived...
+✨ A Special Day Has Arrived... ✨
 </h1>
+
 </div>
 
-<div id="birthdayStage">
+<div id="birthdayStage" style="display:none;">
 
 <div id="cakeArea">
 
-<div id="cakeArea">
-
-<img src="cake.png" id="birthdayCake" alt="Birthday Cake">
-
-</div>
+<img src="cake.png"
+id="birthdayCake"
+alt="Birthday Cake">
 
 </div>
 
@@ -635,8 +634,12 @@ A Special Day Has Arrived...
 
 <p id="wishText"></p>
 
-<button id="continueBtn" onclick="episode5()">
+<button
+id="continueBtn"
+onclick="episode5()">
+
 ❤️ Continue Our Story
+
 </button>
 
 </div>
@@ -644,6 +647,7 @@ A Special Day Has Arrived...
 </div>
 
 `;
+
   setTimeout(()=>{
 document.getElementById("birthdayStage").style.display="block";
 },2000);
