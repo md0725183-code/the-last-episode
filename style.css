@@ -1342,3 +1342,66 @@ transform:scale(1.05);
 box-shadow:0 0 35px rgba(229,9,20,.9);
 }
 
+/* ===== EPISODE 4 FINAL CINEMATIC EFFECT ===== */
+
+#birthdayStage::after{
+content:"";
+position:absolute;
+inset:0;
+pointer-events:none;
+background:
+radial-gradient(circle at top,
+rgba(255,215,0,.18),
+transparent 45%);
+animation:goldenLight 4s ease-in-out infinite;
+}
+
+@keyframes goldenLight{
+
+0%,100%{
+opacity:.4;
+}
+
+50%{
+opacity:1;
+}
+
+}
+
+#birthdayCake:hover{
+transform:scale(1.05);
+transition:.4s;
+}
+
+#birthdayText h1,
+#birthdayText h2,
+#birthdayText h3{
+
+animation:titlePulse 3s ease-in-out infinite;
+
+}
+
+@keyframes titlePulse{
+
+0%,100%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.03);
+}
+
+}
+
+#birthdayWish{
+
+border:1px solid rgba(255,215,0,.25);
+
+background:rgba(20,20,20,.55);
+
+backdrop-filter:blur(12px);
+
+box-shadow:
+0 0 40px rgba(255,215,0,.18);
+
+}
