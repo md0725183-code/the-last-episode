@@ -901,3 +901,12 @@ transform:translate(-50%,0);
 }
 
 }
+#wishText{
+
+white-space:pre-line;
+
+font-size:18px;
+
+line-height:1.9;
+
+}
