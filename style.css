@@ -977,3 +977,74 @@ transform:scale(1.08);
 }
 
 }
+.candles{
+
+display:flex;
+justify-content:center;
+gap:22px;
+
+margin-top:-35px;
+margin-bottom:12px;
+
+}
+
+.candle{
+
+width:8px;
+height:34px;
+
+background:#fff;
+
+border-radius:5px;
+
+position:relative;
+
+}
+
+.flame{
+
+position:absolute;
+
+top:-16px;
+left:50%;
+
+transform:translateX(-50%);
+
+width:12px;
+height:18px;
+
+background:gold;
+
+border-radius:50% 50% 50% 50%;
+
+box-shadow:
+0 0 10px gold,
+0 0 22px orange;
+
+animation:flicker .25s infinite alternate;
+
+}
+
+@keyframes flicker{
+
+0%{
+
+transform:
+translateX(-50%)
+scale(1);
+
+opacity:.85;
+
+}
+
+100%{
+
+transform:
+translateX(-50%)
+scale(.82);
+
+opacity:1;
+
+}
+
+}
