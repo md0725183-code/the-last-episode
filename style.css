@@ -1524,3 +1524,80 @@ opacity:1;
 transform:translateY(0);
 }
 }
+
+#birthdayStage::before{
+content:"";
+position:absolute;
+inset:0;
+background:radial-gradient(circle at center,
+rgba(255,215,0,.12),
+transparent 65%);
+pointer-events:none;
+}
+
+#birthdayCake{
+filter:drop-shadow(0 0 35px rgba(255,215,0,.8));
+}
+
+#birthdayText{
+text-align:center;
+margin-top:40px;
+}
+
+#birthdayText h1{
+font-family:'Cinzel',serif;
+font-size:52px;
+color:#FFD700;
+text-shadow:
+0 0 15px gold,
+0 0 35px gold,
+0 0 60px rgba(255,215,0,.5);
+}
+
+#birthdayText h2{
+margin-top:12px;
+font-size:30px;
+color:#fff;
+font-weight:500;
+}
+
+#birthdayText h3{
+margin-top:10px;
+font-size:42px;
+color:#ff4d6d;
+text-shadow:
+0 0 15px #ff4d6d,
+0 0 35px rgba(255,77,109,.7);
+}
+
+#birthdayWish{
+width:88%;
+margin:35px auto;
+padding:25px;
+border-radius:22px;
+background:rgba(20,20,20,.45);
+border:1px solid rgba(255,255,255,.15);
+backdrop-filter:blur(10px);
+box-shadow:
+0 0 35px rgba(255,215,0,.18);
+}
+
+#continueBtn{
+display:block;
+margin:25px auto 0;
+padding:16px 36px;
+border:none;
+border-radius:40px;
+background:linear-gradient(45deg,#E50914,#ff4d6d);
+color:#fff;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 0 25px rgba(229,9,20,.6);
+transition:.35s;
+}
+
+#continueBtn:hover{
+transform:scale(1.05);
+box-shadow:0 0 35px rgba(229,9,20,.9);
+}
