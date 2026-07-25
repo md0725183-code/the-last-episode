@@ -726,11 +726,17 @@ color:white;
 
 margin-top:10px;
 
-text-shadow:
-0 0 15px #ff4d6d,
-0 0 30px #ff4d6d;
-  animation:titlePulse 2s ease-in-out infinite;
-.confetti{
+text-align:center;
+
+transform:none !important;
+
+rotate:0deg;
+
+writing-mode:horizontal-tb;
+
+z-index:25;
+
+position:relative;
 
 }
 
