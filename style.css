@@ -576,7 +576,7 @@ overflow:hidden;
 background:
 radial-gradient(circle,#2b1200,#000);
 
-display:none;
+display:block;
 
 z-index:9990;
 
@@ -704,6 +704,7 @@ opacity:0;
 
 animation:cakeReveal 2s forwards;
 animation-delay:2s;
+  z-index:10;
 
 }
 
@@ -863,7 +864,8 @@ border-radius:20px;
 backdrop-filter:blur(8px);
 
 animation:fadeWish 2s ease;
-
+  
+z-index:11;
 }
 
 #birthdayWish h2{
