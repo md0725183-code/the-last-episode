@@ -543,16 +543,17 @@ visibility:hidden;
 }
 
 #birthdayStage{
-position:fixed;
-inset:0;
-display:none;
-overflow:hidden;
+position:relative;
+min-height:100vh;
+overflow-x:hidden;
+overflow-y:auto;
 background:
 radial-gradient(circle at center,
 #3b1700 0%,
 #120700 45%,
 #000 100%);
 z-index:9990;
+padding-bottom:80px;
 }
 
 #birthdayStage::before{
