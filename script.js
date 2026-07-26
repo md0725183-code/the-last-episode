@@ -684,9 +684,13 @@ Mohammed Hassan
 
 </p>
 
-<button onclick="episode2()"
-style="padding:15px 30px;background:#E50914;color:white;border:none;border-radius:10px;font-size:18px;margin-bottom:15px;">
-🔁 Watch Again
+
+<button onclick="backHome()">
+🏠 Back to Home
+</button>
+
+<button onclick="episode3Intro()">
+❤️ Watch Episode 3
 </button>
 
 <button onclick="episode3Intro()"
@@ -1327,6 +1331,16 @@ margin-right:10px;">
 
 ⬅ Previous
 
+</button>
+<button onclick="backHome()"
+style="
+padding:12px 24px;
+background:#444;
+color:white;
+border:none;
+border-radius:10px;
+margin-right:10px;">
+🏠 Back to Home
 </button>
 
 <button onclick="episode4()"
