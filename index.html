@@ -1391,13 +1391,24 @@ document.getElementById("message").innerHTML="❌ Wrong Password";
 
     playTudum();
 
-    document.getElementById("tudumIntro").style.display="flex";
+    const tudum = document.getElementById("tudumIntro");
+    const intro = document.getElementById("introScreen");
+    const home = document.getElementById("home");
+
+    tudum.style.display = "flex";
 
     setTimeout(function(){
 
-        document.getElementById("tudumIntro").style.display="none";
+        tudum.style.display = "none";
 
-        document.getElementById("home").style.display="block";
+        intro.style.display = "flex";
+
+        setTimeout(function(){
+
+            intro.style.display = "none";
+            home.style.display = "block";
+
+        },3000);
 
     },3000);
 
