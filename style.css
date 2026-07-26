@@ -2000,3 +2000,24 @@ line-height:2.1;
 color:#fff;
 
 }
+#musicBtn{
+position:fixed;
+top:15px;
+right:15px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:rgba(0,0,0,.6);
+color:white;
+font-size:24px;
+cursor:pointer;
+z-index:99999;
+backdrop-filter:blur(8px);
+transition:.3s;
+}
+
+#musicBtn:hover{
+transform:scale(1.1);
+background:#E50914;
+}
