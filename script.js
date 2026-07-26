@@ -39,6 +39,9 @@ fade.classList.remove("show");
 },500);
 
 }
+function backHome() {
+    document.querySelector(".container").innerHTML = homePage;
+}
 function episode2Loading(){
 
 document.querySelector(".container").innerHTML=`
