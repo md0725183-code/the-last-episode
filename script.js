@@ -18,6 +18,15 @@ function toggleMusic() {
         document.getElementById("musicBtn").innerHTML = "🔇";
     }
 }
+function playTudum(){
+
+const sound=document.getElementById("tudumSound");
+
+sound.currentTime=0;
+
+sound.play().catch(()=>{});
+
+}
 function fadeTo(nextScene){
 
 const fade=document.getElementById("fade");
