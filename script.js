@@ -689,9 +689,7 @@ Mohammed Hassan
 🏠 Back to Home
 </button>
 
-<button onclick="episode3Intro()">
-❤️ Watch Episode 3
-</button>
+
 
 <button onclick="episode3Intro()"
 style="padding:15px 30px;
