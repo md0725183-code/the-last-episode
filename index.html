@@ -221,7 +221,7 @@ opacity:1;
   
 <body>
   
-
+<audio id="bgMusic" loop preload="auto">
     <source src="bg-music.mp3" type="audio/mpeg">
   </audio>
   <div id="fade" class="fadeOverlay"></div>
@@ -1388,23 +1388,21 @@ document.getElementById("message").innerHTML="❌ Wrong Password";
 }
   function showTudum(){
 
-const intro = document.getElementById("tudumIntro");
+    playTudum();
 
-intro.style.display="flex";
+    const intro=document.getElementById("tudumIntro");
 
-setTimeout(()=>{
+    intro.style.display="flex";
 
-intro.style.opacity="0";
+    setTimeout(()=>{
+        intro.style.opacity="0";
 
-setTimeout(()=>{
+        setTimeout(()=>{
+            intro.style.display="none";
+            document.getElementById("home").style.display="block";
+        },800);
 
-intro.style.display="none";
-
-document.getElementById("home").style.display="block";
-
-},800);
-
-},3200);
+    },3200);
 
 }
   
