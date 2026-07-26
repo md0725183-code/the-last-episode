@@ -1386,34 +1386,22 @@ document.getElementById("message").innerHTML="❌ Wrong Password";
 }
 
 }
+  
   function showTudum(){
 
     playTudum();
 
-    const tudum=document.getElementById("tudumIntro");
-    const intro=document.getElementById("introScreen");
-    const home=document.getElementById("home");
+    document.getElementById("tudumIntro").style.display="flex";
 
-    tudum.style.display="flex";
+    setTimeout(function(){
 
-    setTimeout(()=>{
+        document.getElementById("tudumIntro").style.display="none";
 
-        tudum.style.display="none";
-
-        intro.style.display="flex";
-        intro.style.opacity="1";
-
-        setTimeout(()=>{
-
-            intro.style.display="none";
-            home.style.display="block";
-
-        },3000);
+        document.getElementById("home").style.display="block";
 
     },3000);
 
 }
-  
   </script>
   
   <div id="tudumIntro" style="display:none;">
