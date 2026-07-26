@@ -7,6 +7,17 @@ music.volume=0.25;
 music.play().catch(()=>{});
 
 }
+function toggleMusic() {
+    const music = document.getElementById("bgMusic");
+
+    if (music.paused) {
+        music.play();
+        document.getElementById("musicBtn").innerHTML = "🎵";
+    } else {
+        music.pause();
+        document.getElementById("musicBtn").innerHTML = "🔇";
+    }
+}
 function fadeTo(nextScene){
 
 const fade=document.getElementById("fade");
