@@ -1390,17 +1390,25 @@ document.getElementById("message").innerHTML="❌ Wrong Password";
 
     playTudum();
 
-    const intro=document.getElementById("tudumIntro");
+    const tudum = document.getElementById("tudumIntro");
+    const intro = document.getElementById("introScreen");
+    const home = document.getElementById("home");
 
-    intro.style.display="flex";
+    tudum.style.display = "flex";
 
     setTimeout(()=>{
-        intro.style.opacity="0";
+
+        tudum.style.display = "none";
+
+        intro.style.display = "flex";
 
         setTimeout(()=>{
-            intro.style.display="none";
-            document.getElementById("home").style.display="block";
-        },800);
+
+            intro.style.display = "none";
+
+            home.style.display = "block";
+
+        },3000);
 
     },3200);
 
