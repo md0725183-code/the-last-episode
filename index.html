@@ -1381,7 +1381,18 @@ let homePage = "";
         document.getElementById("home").style.display="block";
 
         homePage = document.getElementById("home").parentNode.innerHTML;
+      
+playTudum();
 
+document.getElementById("fade").classList.add("show");
+
+setTimeout(() => {
+
+    document.getElementById("fade").classList.remove("show");
+
+    playMusic();
+
+}, 2000);
         playMusic();
 
     }else{
