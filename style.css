@@ -2125,3 +2125,54 @@ opacity:.8;
 transform:translateX(-50%) scale(1.15);
 }
 }
+.particles{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+pointer-events:none;
+}
+
+.particles span{
+position:absolute;
+display:block;
+width:6px;
+height:6px;
+background:#FFD700;
+border-radius:50%;
+opacity:.6;
+animation:particleFloat 10s linear infinite;
+}
+
+.particles span:nth-child(1){left:10%;animation-delay:0s;}
+.particles span:nth-child(2){left:22%;animation-delay:1s;}
+.particles span:nth-child(3){left:35%;animation-delay:2s;}
+.particles span:nth-child(4){left:48%;animation-delay:3s;}
+.particles span:nth-child(5){left:60%;animation-delay:4s;}
+.particles span:nth-child(6){left:72%;animation-delay:5s;}
+.particles span:nth-child(7){left:84%;animation-delay:6s;}
+.particles span:nth-child(8){left:94%;animation-delay:7s;}
+
+@keyframes particleFloat{
+
+0%{
+transform:translateY(100vh) scale(.4);
+opacity:0;
+}
+
+20%{
+opacity:.8;
+}
+
+80%{
+opacity:.8;
+}
+
+100%{
+transform:translateY(-120px) scale(1.2);
+opacity:0;
+}
+
+}
