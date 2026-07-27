@@ -1390,10 +1390,29 @@ setTimeout(() => {
 
     document.getElementById("fade").classList.remove("show");
 
-    playMusic();
+    document.getElementById("home").style.display = "none";
 
-}, 2000);
+    const intro = document.getElementById("intro");
+
+    intro.style.display = "flex";
+
+    setTimeout(() => {
+        document.getElementById("introTitle").style.opacity = "1";
+        document.getElementById("introTitle").style.transform = "scale(1)";
+    },100);
+
+    setTimeout(() => {
+
+        intro.style.display = "none";
+
+        document.getElementById("home").style.display = "block";
+
         playMusic();
+
+    },3000);
+
+},2000);
+        
 
     }else{
         alert("Wrong Password");
@@ -1408,6 +1427,44 @@ setTimeout(() => {
 
   }  
   </script>
+      <div id="intro" style="display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:black;
+z-index:99999;
+justify-content:center;
+align-items:center;
+flex-direction:column;">
+
+<h1 id="introTitle"
+style="
+color:#E50914;
+font-size:55px;
+letter-spacing:8px;
+opacity:0;
+transform:scale(.7);
+transition:1.2s;">
+
+NETFLIX
+
+</h1>
+
+<h2
+style="
+color:white;
+margin-top:20px;
+letter-spacing:5px;
+font-size:28px;
+opacity:.9;">
+
+THE LAST EPISODE
+
+</h2>
+
+      </div>
   
   
     <audio id="tudumSound" preload="auto">
