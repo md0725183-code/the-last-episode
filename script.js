@@ -1360,3 +1360,14 @@ border-radius:10px;">
 `;
 
 }
+window.onload = function () {
+
+    if(sessionStorage.getItem("loggedIn")=="yes"){
+
+        document.getElementById("login").style.display="none";
+        document.getElementById("home").style.display="block";
+        playMusic();
+
+    }
+
+}
