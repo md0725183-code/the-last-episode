@@ -1391,26 +1391,29 @@ function checkPassword(){
     const intro = document.getElementById("introScreen");
     const home = document.getElementById("home");
 
+    alert("tudum = " + (tudum ? "OK" : "NULL"));
+    alert("intro = " + (intro ? "OK" : "NULL"));
+    alert("home = " + (home ? "OK" : "NULL"));
+
+    if(!tudum || !intro || !home){
+        return;
+    }
+
     tudum.style.display = "flex";
     intro.style.display = "none";
     home.style.display = "none";
 
-    // 3 sec Tudum
     setTimeout(function(){
 
         tudum.style.display = "none";
-      
-alert("Intro reached");
-intro.style.display = "flex";
-void intro.offsetWidth;
-        // Show THE LAST EPISODE intro
-        
 
-        // 3 sec Intro
+        alert("Intro reached");
+
+        intro.style.display = "flex";
+
         setTimeout(function(){
 
             intro.style.display = "none";
-
             home.style.display = "block";
 
         },3000);
