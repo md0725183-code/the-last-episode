@@ -2012,3 +2012,43 @@ opacity:1;
 transform:scale(1.4) rotate(25deg);
 }
 }
+.moon{
+position:relative;
+font-size:70px;
+margin-bottom:20px;
+animation:moonFloat 4s ease-in-out infinite;
+}
+
+.moonGlow{
+position:absolute;
+top:50%;
+left:50%;
+width:90px;
+height:90px;
+transform:translate(-50%,-50%);
+border-radius:50%;
+background:rgba(255,255,180,.25);
+filter:blur(18px);
+animation:moonGlow 2.5s ease-in-out infinite;
+z-index:-1;
+}
+
+@keyframes moonFloat{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-10px);
+}
+}
+
+@keyframes moonGlow{
+0%,100%{
+opacity:.4;
+transform:translate(-50%,-50%) scale(1);
+}
+50%{
+opacity:.9;
+transform:translate(-50%,-50%) scale(1.25);
+}
+}
