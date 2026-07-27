@@ -1386,11 +1386,17 @@ clearInterval(timer);
 setTimeout(()=>{
 
 document.body.style.transition="2s";
-
 document.body.style.opacity="0";
 
-},5000);
+setTimeout(()=>{
 
+seasonEnd();
+
+document.body.style.opacity="1";
+
+},2000);
+
+},5000);
 }
 
 },35);
@@ -1403,18 +1409,21 @@ document.querySelector(".container").innerHTML=`
 <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:100vh;padding:25px;text-align:center;">
 
 <h1 style="color:#E50914;font-size:46px;">
-🎬 Season 1 Completed
+🎬 THE END
 </h1>
 
 <p style="font-size:22px;color:#ddd;line-height:1.8;">
-Thank you for watching our story. ❤️
-<br><br>
-Every episode was a beautiful memory...
-and now a new chapter is about to begin.
+Every beautiful story
+has an ending...
+
+But our real story
+is only beginning.
+
+❤️
 </p>
 
 <h2 style="margin-top:40px;color:gold;">
-💍 Season 2 Begins
+💍 Coming Soon...
 </h2>
 
 <h1 style="font-size:55px;color:white;">
