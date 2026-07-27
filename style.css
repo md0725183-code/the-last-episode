@@ -1957,3 +1957,58 @@ transition:.3s;
 transform:scale(1.1);
 background:#E50914;
 }
+.ring{
+position:relative;
+display:inline-block;
+font-size:60px;
+animation:ringFloat 3s ease-in-out infinite;
+}
+
+@keyframes ringFloat{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-8px);
+}
+}
+
+.sparkle{
+position:absolute;
+font-size:18px;
+animation:sparkle 1.5s infinite;
+}
+
+.s1{
+top:-10px;
+left:-12px;
+}
+
+.s2{
+bottom:-10px;
+right:-12px;
+animation-delay:.4s;
+}
+
+.s3{
+top:-10px;
+right:-12px;
+animation-delay:.2s;
+}
+
+.s4{
+bottom:-10px;
+left:-12px;
+animation-delay:.6s;
+}
+
+@keyframes sparkle{
+0%,100%{
+opacity:0;
+transform:scale(.5) rotate(0deg);
+}
+50%{
+opacity:1;
+transform:scale(1.4) rotate(25deg);
+}
+}
