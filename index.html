@@ -1374,6 +1374,7 @@ function checkPassword(){
 
     if(p==="01082026"){
       sessionStorage.setItem("loggedIn","yes");
+      homePage = document.querySelector(".container").innerHTML;
         document.getElementById("login").style.display="none";
         document.getElementById("home").style.display="block";
 
