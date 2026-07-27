@@ -1365,26 +1365,23 @@ let homePage = "";
 
 function checkPassword(){
 
+    alert("1");
+
     const p = document.getElementById("pass").value;
 
-    if(p === "01082026"){
+    if(p==="01082026"){
 
-        document.getElementById("login").style.display = "none";
+        alert("2");
 
-        document.querySelector(".container").style.maxWidth = "100%";
+        document.getElementById("login").style.display="none";
 
-        homePage = document.getElementById("home").innerHTML;
-
-        playMusic();
+        alert("3");
 
         showTudum();
 
     }else{
-
-        document.getElementById("message").innerHTML = "❌ Wrong Password";
-
+        alert("Wrong Password");
     }
-
 }
   function showTudum(){
 
