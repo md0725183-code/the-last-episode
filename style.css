@@ -2370,3 +2370,44 @@ transform:translateY(100vh);
 opacity:0;
 }
 }
+.hourglass{
+position:relative;
+font-size:80px;
+display:inline-block;
+margin-bottom:25px;
+animation:hourglassFloat 4s ease-in-out infinite;
+}
+
+.sandGlow{
+position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+width:90px;
+height:90px;
+border-radius:50%;
+background:rgba(255,215,0,.25);
+filter:blur(18px);
+z-index:-1;
+animation:hourglassGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes hourglassFloat{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-8px);
+}
+}
+
+@keyframes hourglassGlow{
+0%,100%{
+opacity:.4;
+transform:translate(-50%,-50%) scale(1);
+}
+50%{
+opacity:.9;
+transform:translate(-50%,-50%) scale(1.2);
+}
+}
