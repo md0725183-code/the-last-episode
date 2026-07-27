@@ -2550,3 +2550,70 @@ text-shadow:
 }
 
 }
+.finalTitle{
+
+font-size:58px;
+font-weight:900;
+letter-spacing:3px;
+text-align:center;
+
+animation:titleBreath 3s ease-in-out infinite;
+
+text-shadow:
+0 0 10px rgba(255,255,255,.4);
+
+}
+
+@keyframes titleBreath{
+
+0%,100%{
+
+transform:scale(1);
+opacity:.9;
+
+}
+
+50%{
+
+transform:scale(1.05);
+opacity:1;
+
+text-shadow:
+0 0 12px #fff,
+0 0 25px #E50914,
+0 0 40px #E50914;
+
+}
+
+}
+.episode-subtitle{
+
+animation:heartBeat 2.8s ease-in-out infinite;
+
+}
+
+@keyframes heartBeat{
+
+0%,100%{
+transform:scale(1);
+text-shadow:
+0 0 8px rgba(255,255,255,.4);
+}
+
+25%{
+transform:scale(1.03);
+}
+
+50%{
+transform:scale(1.08);
+text-shadow:
+0 0 12px #fff,
+0 0 25px #ff4d6d,
+0 0 45px #ff4d6d;
+}
+
+75%{
+transform:scale(1.03);
+}
+
+}
