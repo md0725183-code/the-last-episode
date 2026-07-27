@@ -2411,3 +2411,74 @@ opacity:.9;
 transform:translate(-50%,-50%) scale(1.2);
 }
 }
+.prayerScene{
+position:relative;
+overflow:hidden;
+}
+
+.lightGlow{
+position:absolute;
+top:50%;
+left:50%;
+width:260px;
+height:260px;
+transform:translate(-50%,-50%);
+border-radius:50%;
+background:radial-gradient(circle,
+rgba(255,215,0,.35),
+transparent 70%);
+animation:prayerGlow 3s ease-in-out infinite;
+z-index:0;
+}
+
+.prayerParticles{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+}
+
+.prayerParticles span{
+position:absolute;
+width:5px;
+height:5px;
+background:#FFD700;
+border-radius:50%;
+animation:prayerFloat 8s linear infinite;
+}
+
+.prayerParticles span:nth-child(1){left:8%;animation-delay:0s;}
+.prayerParticles span:nth-child(2){left:22%;animation-delay:1s;}
+.prayerParticles span:nth-child(3){left:36%;animation-delay:2s;}
+.prayerParticles span:nth-child(4){left:50%;animation-delay:3s;}
+.prayerParticles span:nth-child(5){left:64%;animation-delay:4s;}
+.prayerParticles span:nth-child(6){left:78%;animation-delay:5s;}
+.prayerParticles span:nth-child(7){left:90%;animation-delay:6s;}
+.prayerParticles span:nth-child(8){left:96%;animation-delay:7s;}
+
+@keyframes prayerGlow{
+0%,100%{
+opacity:.5;
+transform:translate(-50%,-50%) scale(1);
+}
+50%{
+opacity:1;
+transform:translate(-50%,-50%) scale(1.15);
+}
+}
+
+@keyframes prayerFloat{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+20%{
+opacity:.8;
+}
+100%{
+transform:translateY(-100px);
+opacity:0;
+}
+}
