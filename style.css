@@ -2482,3 +2482,40 @@ transform:translateY(-100px);
 opacity:0;
 }
 }
+.episode-text{
+animation:textFade 1.2s ease;
+}
+
+@keyframes textFade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+.next-btn{
+
+transition:.35s;
+box-shadow:0 0 12px rgba(255,215,0,.25);
+
+}
+
+.next-btn:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 0 22px gold;
+
+}
+
+.next-btn:active{
+
+transform:scale(.96);
+
+}
