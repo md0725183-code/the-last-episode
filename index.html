@@ -1382,7 +1382,8 @@ let homePage = "";
 
         homePage = document.getElementById("home").parentNode.innerHTML;
       
-playTudum();
+
+        playTudum();
 
 document.getElementById("fade").classList.add("show");
 
@@ -1390,29 +1391,9 @@ setTimeout(() => {
 
     document.getElementById("fade").classList.remove("show");
 
-    document.getElementById("home").style.display = "none";
-
-    const intro = document.getElementById("intro");
-
-    intro.style.display = "flex";
-
-    setTimeout(() => {
-        document.getElementById("introTitle").style.opacity = "1";
-        document.getElementById("introTitle").style.transform = "scale(1)";
-    },100);
-
-    setTimeout(() => {
-
-        intro.style.display = "none";
-
-        document.getElementById("home").style.display = "block";
-
-        playMusic();
-
-    },3000);
+    playMusic();
 
 },2000);
-        
 
     }else{
         alert("Wrong Password");
