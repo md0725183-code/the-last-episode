@@ -1369,7 +1369,7 @@ function checkPassword(){
 
     if(p==="01082026"){
 
-        document.getElementById("login").style.display="none";
+        document.getElementById("home").style.display = "block";
 
         playMusic();
 
@@ -1379,68 +1379,11 @@ function checkPassword(){
         alert("Wrong Password");
     }
 }
-  function showTudum(){
-
-    playTudum();
-
-    const tudum = document.getElementById("tudumIntro");
-    const intro = document.getElementById("introScreen");
-    const home = document.getElementById("home");
-
-    tudum.style.display = "flex";
-    intro.style.display = "none";
-    home.style.display = "none";
-
-    setTimeout(function(){
-
-        tudum.style.display = "none";
-        intro.style.display = "flex";
-
-        setTimeout(function(){
-
-            intro.style.display = "none";
-            home.style.display = "block";
-
-        },3000);
-
-    },3000);
-
-}
-
+  
         
   </script>
   
-  <div id="tudumIntro" style="display:none;">
-    <div class="tudumText">THE LAST EPISODE</div>
-    </div>
-
-    <div id="introScreen">
-    <div class="introContent">
-        <h1 class="introTitle">THE LAST<br>EPISODE</h1>
-
-        <div class="introLine"></div>
-
-        <p class="introSubtitle">
-            A Netflix Original Love Story<br>
-            Every Love Story Has A Last Episode...<br>
-            Ours Is Just Beginning. ❤️
-        </p>
-
-        <div class="introParticles">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-</div>
-
-    
-
-
-
-
+  
     <audio id="tudumSound" preload="auto">
     <source src="tudum.mp3" type="audio/mpeg">
     </audio>
