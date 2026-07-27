@@ -2519,3 +2519,34 @@ box-shadow:0 0 22px gold;
 transform:scale(.96);
 
 }
+.netflixFinal{
+
+font-size:18px;
+letter-spacing:8px;
+color:#E50914;
+font-weight:bold;
+
+animation:netflixGlow 2s ease-in-out infinite;
+
+}
+
+@keyframes netflixGlow{
+
+0%,100%{
+
+opacity:.5;
+text-shadow:0 0 5px #E50914;
+
+}
+
+50%{
+
+opacity:1;
+text-shadow:
+0 0 10px #E50914,
+0 0 25px #E50914,
+0 0 40px #ff2b2b;
+
+}
+
+}
