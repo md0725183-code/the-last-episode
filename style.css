@@ -2692,3 +2692,30 @@ text-shadow:
 }
 
 }
+.cursor{
+
+display:inline-block;
+
+color:#FFD700;
+
+font-weight:bold;
+
+animation:cursorBlink .8s infinite;
+
+}
+
+@keyframes cursorBlink{
+
+0%,50%{
+
+opacity:1;
+
+}
+
+51%,100%{
+
+opacity:0;
+
+}
+
+}
