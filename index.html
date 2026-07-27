@@ -1373,7 +1373,9 @@ const target=document.getElementById("lastWords");
 
 const timer=setInterval(()=>{
 
-target.innerHTML+=message.charAt(i);
+target.innerHTML =
+message.substring(0,i) +
+'<span class="cursor">|</span>';
 
 i++;
 
