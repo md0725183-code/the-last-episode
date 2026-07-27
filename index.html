@@ -1363,27 +1363,29 @@ style="margin-top:40px;padding:15px 35px;background:#E50914;color:#fff;border:no
 }
 let homePage = "";
 
+let homePage = "";
+
 function checkPassword(){
 
-let p = document.getElementById("pass").value;
+    const p = document.getElementById("pass").value;
 
-if(p==="01082026"){
+    if(p === "01082026"){
 
-document.getElementById("login").style.display="none";
+        document.getElementById("login").style.display = "none";
 
-document.querySelector(".container").style.maxWidth="100%";
+        document.querySelector(".container").style.maxWidth = "100%";
 
-homePage = document.getElementById("home").innerHTML;
+        homePage = document.getElementById("home").innerHTML;
 
-playMusic();
-  
-showTudum();
+        playMusic();
 
-}else{
+        showTudum();
 
-document.getElementById("message").innerHTML="❌ Wrong Password";
+    }else{
 
-}
+        document.getElementById("message").innerHTML = "❌ Wrong Password";
+
+    }
 
 }
   function showTudum(){
@@ -1391,20 +1393,33 @@ document.getElementById("message").innerHTML="❌ Wrong Password";
     playTudum();
 
     const tudum = document.getElementById("tudumIntro");
+    const intro = document.getElementById("introScreen");
     const home = document.getElementById("home");
 
     tudum.style.display = "flex";
+    intro.style.display = "none";
+    home.style.display = "none";
 
+    // 3 sec Tudum
     setTimeout(function(){
 
         tudum.style.display = "none";
 
-        home.style.display = "block";
+        // Show THE LAST EPISODE intro
+        intro.style.display = "flex";
+
+        // 3 sec Intro
+        setTimeout(function(){
+
+            intro.style.display = "none";
+
+            home.style.display = "block";
+
+        },3000);
 
     },3000);
 
 }
-  
   </script>
   
   <div id="tudumIntro" style="display:none;">
