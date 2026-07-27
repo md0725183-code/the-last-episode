@@ -1363,15 +1363,14 @@ style="margin-top:40px;padding:15px 35px;background:#E50914;color:#fff;border:no
 }
 
 let homePage = "";
-  window.onload = function () {
-    homePage = document.getElementById("home").outerHTML;
-};
+  
 
 function checkPassword(){
 
     const p = document.getElementById("pass").value;
 
     if(p==="01082026"){
+      sessionStorage.setItem("loggedIn","yes");
         document.getElementById("login").style.display="none";
         document.getElementById("home").style.display="block";
 
@@ -1381,9 +1380,7 @@ function checkPassword(){
     }
 }
   function backHome(){
-
-    document.querySelector(".container").innerHTML = homePage;
-
+    location.reload();
   }
         
   </script>
