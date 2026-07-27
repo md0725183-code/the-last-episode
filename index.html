@@ -1364,7 +1364,9 @@ style="margin-top:40px;padding:15px 35px;background:#E50914;color:#fff;border:no
 }
 
 let homePage = "";
-  
+  window.onload = function () {
+    homePage = document.getElementById("home").outerHTML;
+};
 
 function checkPassword(){
 
@@ -1380,9 +1382,7 @@ function checkPassword(){
         alert("Wrong Password");
     }
 }
-  function backHome(){
-    location.reload();
-  }
+  
         
   </script>
   
