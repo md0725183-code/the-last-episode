@@ -2427,11 +2427,10 @@ opacity:0;
 }
 }
 .hourglass{
-position:relative;
-font-size:80px;
-display:inline-block;
-margin-bottom:25px;
-animation:hourglassFloat 4s ease-in-out infinite;
+    font-size:85px;
+    display:inline-block;
+    animation:hourSpin 8s linear infinite;
+    filter:drop-shadow(0 0 25px gold);
 }
 
 .sandGlow{
@@ -2861,4 +2860,19 @@ transform:rotate(-3deg);
 .episode-page{
     padding-top: 45px;
     box-sizing: border-box;
+}
+@keyframes hourSpin{
+
+0%{
+transform:rotate(0deg);
+}
+
+50%{
+transform:rotate(180deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
 }
