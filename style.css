@@ -2869,3 +2869,16 @@ transform:rotate(-3deg);
 }
 
 }
+/* ALL EPISODES LOWER */
+.episode-page,
+.oldScene,
+.journeyScene,
+.duaScene,
+.seasonScene,
+.prayerScene,
+.finalIntro,
+.endingScene,
+.finalMessage{
+    padding-top:60px !important;
+    box-sizing:border-box;
+}
