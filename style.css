@@ -2466,6 +2466,55 @@ opacity:.9;
 transform:translate(-50%,-50%) scale(1.2);
 }
 }
+.page{
+position:absolute;
+font-size:18px;
+opacity:0;
+z-index:4;
+animation:paperFall 5s linear infinite;
+}
+
+.p1{
+left:48%;
+top:42%;
+animation-delay:0s;
+}
+
+.p2{
+left:52%;
+top:42%;
+animation-delay:1.2s;
+}
+
+.p3{
+left:50%;
+top:42%;
+animation-delay:2.4s;
+}
+
+.p4{
+left:49%;
+top:42%;
+animation-delay:3.6s;
+}
+
+@keyframes paperFall{
+
+0%{
+opacity:0;
+transform:translateY(0) rotate(0deg);
+}
+
+10%{
+opacity:1;
+}
+
+100%{
+opacity:0;
+transform:translateY(140px) rotate(360deg);
+}
+
+}
 .prayerScene{
 position:relative;
 overflow:hidden;
