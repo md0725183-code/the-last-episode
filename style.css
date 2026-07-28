@@ -1367,24 +1367,27 @@ overflow:hidden;
 position:relative;
 display:inline-block;
 font-size:60px;
+z-index:5;
 }
 
 .ring-left{
-animation:ringLeft 2.5s ease-out forwards;
+margin-right:55px;
+animation:ringLeft 2.2s ease forwards;
 }
 
 .ring-right{
-animation:ringRight 2.5s ease-out forwards;
+margin-left:55px;
+animation:ringRight 2.2s ease forwards;
 }
 
 @keyframes ringLeft{
 
 0%{
-transform:translateX(-220px);
+transform:translateX(-180px);
 }
 
-70%{
-transform:translateX(10px);
+80%{
+transform:translateX(15px);
 }
 
 100%{
@@ -1396,15 +1399,48 @@ transform:translateX(0);
 @keyframes ringRight{
 
 0%{
-transform:translateX(220px);
+transform:translateX(180px);
 }
 
-70%{
-transform:translateX(-10px);
+80%{
+transform:translateX(-15px);
 }
 
 100%{
 transform:translateX(0);
+}
+
+}
+
+.sparkle{
+
+position:absolute;
+font-size:22px;
+opacity:0;
+animation:sparkleAfter 2.2s forwards;
+
+}
+
+.s1{top:-15px;left:42%;}
+.s2{top:30px;left:48%;}
+.s3{top:-10px;right:42%;}
+.s4{top:35px;right:48%;}
+
+@keyframes sparkleAfter{
+
+0%,75%{
+opacity:0;
+transform:scale(.2);
+}
+
+90%{
+opacity:1;
+transform:scale(1.5);
+}
+
+100%{
+opacity:1;
+transform:scale(1);
 }
 
 }
