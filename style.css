@@ -1364,39 +1364,27 @@ overflow:hidden;
 }
 
 .ring{
-
-position:absolute;
-
-font-size:70px;
-
-top:80px;
-
-animation-duration:2.5s;
-
-animation-fill-mode:forwards;
-
+position:relative;
+display:inline-block;
+font-size:60px;
 }
 
 .ring-left{
-animation:ringLeft 3s ease-in-out infinite;
+animation:ringLeft 2.5s ease-out forwards;
 }
 
 .ring-right{
-animation:ringRight 3s ease-in-out infinite;
+animation:ringRight 2.5s ease-out forwards;
 }
 
 @keyframes ringLeft{
 
 0%{
-transform:translateX(-90px);
+transform:translateX(-220px);
 }
 
-45%{
-transform:translateX(0);
-}
-
-55%{
-transform:translateX(0) scale(1.1);
+70%{
+transform:translateX(10px);
 }
 
 100%{
@@ -1408,15 +1396,11 @@ transform:translateX(0);
 @keyframes ringRight{
 
 0%{
-transform:translateX(90px);
+transform:translateX(220px);
 }
 
-45%{
-transform:translateX(0);
-}
-
-55%{
-transform:translateX(0) scale(1.1);
+70%{
+transform:translateX(-10px);
 }
 
 100%{
