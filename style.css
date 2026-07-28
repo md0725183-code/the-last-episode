@@ -1356,12 +1356,12 @@ animation:fadeIn 1s ease;
 /* ===== EPISODE 5 ===== */
 
 #nikahScene{
-
-position:relative;
-
-overflow:hidden;
-
+    position:relative;
+    overflow:hidden;
+    padding-top:70px;
+    box-sizing:border-box;
 }
+
 
 .ring{
 position:relative;
