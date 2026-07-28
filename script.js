@@ -161,7 +161,8 @@ color:white;">
 
 }
 function episode2Scene1(){
-
+    
+window.scrollTo(0,0);
 document.querySelector(".container").innerHTML=`
 
 <div class="movieScene" style="background:black;min-height:100vh;color:white;text-align:center;padding:20px;">
@@ -226,6 +227,7 @@ font-size:18px;">
 
 }
 function episode2Scene2(){
+    window.scrollTo(0,0);
 
 document.querySelector(".container").innerHTML=`
 
@@ -281,6 +283,7 @@ Next Scene ➜
 
 }
 function episode2Scene3(){
+    window.scrollTo(0,0);
 
 document.querySelector(".container").innerHTML=`
 
@@ -349,6 +352,7 @@ Next Scene ➜
 
 }
 function episode2Scene4(){
+    window.scrollTo(0,0);
 
 document.querySelector(".container").innerHTML=`
 
@@ -424,6 +428,7 @@ Next Scene ➜
 
 }
 function episode2Scene5(){
+    window.scrollTo(0,0);
 
 document.querySelector(".container").innerHTML=`
 
@@ -501,6 +506,7 @@ Next Scene ➜
 
 }
 function episode2Scene6(){
+    window.scrollTo(0,0);
 
 document.querySelector(".container").innerHTML=`
 
@@ -574,6 +580,7 @@ Next Scene ➜
 
 }
 function episode2Scene7(){
+    window.scrollTo(0,0);
 
 document.querySelector(".container").innerHTML=`
 
@@ -651,6 +658,7 @@ Finish Movie 🎬
 
 }
 function episode2Ending(){
+    window.scrollTo(0,0);
 
 document.querySelector(".container").innerHTML=`
 
@@ -806,7 +814,9 @@ cursor:pointer;">
 `;
 
 }
+
 function episode3Scene1(){
+    window.scrollTo(0,0);
 
 document.querySelector(".container").innerHTML=`
 
@@ -919,6 +929,7 @@ Next Scene ➜
 
 }
 function episode3Scene2(){
+    window.scrollTo(0,0);
 
 document.querySelector(".container").innerHTML=`
 
@@ -1029,6 +1040,7 @@ Next Scene ➜
 
 }
 function episode3Scene3(){
+    window.scrollTo(0,0);
 
 document.querySelector(".container").innerHTML=`
 
@@ -1134,6 +1146,7 @@ Next Scene ➜
 
 }
 function episode3Scene4(){
+    window.scrollTo(0,0);
 
 document.querySelector(".container").innerHTML=`
 
@@ -1235,6 +1248,7 @@ Next Scene ➜
 
 }
 function episode3Scene5(){
+    window.scrollTo(0,0);
 
 document.querySelector(".container").innerHTML=`
 
