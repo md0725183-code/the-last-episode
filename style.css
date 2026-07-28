@@ -1585,11 +1585,21 @@ min-height:100vh;
 }
 
 #plane{
-width:170px;
+
 position:absolute;
-top:90px;
-left:-220px;
-animation:flyPlane 7s linear forwards;
+
+width:160px;
+
+left:-180px;
+
+top:20px;
+
+z-index:2;
+
+filter:drop-shadow(0 8px 18px rgba(0,0,0,.35));
+
+animation:flyPlane 8s linear infinite;
+
 }
 
 @keyframes flyPlane{
