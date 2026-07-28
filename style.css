@@ -2870,3 +2870,12 @@ transform:rotate(-3deg);
 
 }
 
+/* FINAL POSITION FIX */
+
+#login,
+#home,
+.page,
+.episode-page{
+    padding-top: 45px;
+    box-sizing: border-box;
+}
