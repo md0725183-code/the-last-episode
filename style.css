@@ -2218,36 +2218,40 @@ z-index:5;
 filter:drop-shadow(0 8px 15px rgba(0,0,0,.35));
 
 animation:flyPlane 9s linear infinite;
+    filter:drop-shadow(0 10px 18px rgba(0,0,0,.35));
+
+transform-origin:center;
+
+animation:flyPlane 9s ease-in-out infinite;
 
 }
 @keyframes flyPlane{
 
 0%{
-
 left:-220px;
-top:55px;
-transform:rotate(-6deg);
-
+top:60px;
+transform:rotate(-5deg);
 }
 
-30%{
-
-top:35px;
-
+25%{
+top:40px;
+transform:rotate(-2deg);
 }
 
-60%{
+50%{
+top:25px;
+transform:rotate(0deg);
+}
 
-top:45px;
-
+75%{
+top:40px;
+transform:rotate(2deg);
 }
 
 100%{
-
 left:110%;
 top:30px;
-transform:rotate(2deg);
-
+transform:rotate(4deg);
 }
 
 }
