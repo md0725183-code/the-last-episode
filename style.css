@@ -1456,14 +1456,21 @@ color:#E50914;
 }
 
 .episode-subtitle{
-
-text-align:center;
-
-color:white;
-
-margin-top:130px;
-
-font-size:30px;
+    text-align:center;
+    color:white;
+    margin-top:30px;
+    font-size:30px;
+}
+.episode-page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:80px 20px 40px;
+    text-align:center;
+    box-sizing:border-box;
+}
 
 }
 
