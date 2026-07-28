@@ -2002,51 +2002,7 @@ transition:.3s;
 transform:scale(1.1);
 background:#E50914;
 }
-.ring{
-position:relative;
-display:inline-block;
-font-size:60px;
-}
 
-.ring-left{
-animation:ringLeft 2.5s ease-out forwards;
-}
-
-.ring-right{
-animation:ringRight 2.5s ease-out forwards;
-}
-
-@keyframes ringLeft{
-
-0%{
-transform:translateX(-220px);
-}
-
-70%{
-transform:translateX(10px);
-}
-
-100%{
-transform:translateX(0);
-}
-
-}
-
-@keyframes ringRight{
-
-0%{
-transform:translateX(220px);
-}
-
-70%{
-transform:translateX(-10px);
-}
-
-100%{
-transform:translateX(0);
-}
-
-}
 
 .sparkle{
 
