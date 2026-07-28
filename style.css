@@ -2006,56 +2006,82 @@ background:#E50914;
 position:relative;
 display:inline-block;
 font-size:60px;
-animation:ringFloat 3s ease-in-out infinite;
 }
 
-@keyframes ringFloat{
-0%,100%{
-transform:translateY(0);
+.ring-left{
+animation:ringLeft 2.5s ease-out forwards;
 }
-50%{
-transform:translateY(-8px);
+
+.ring-right{
+animation:ringRight 2.5s ease-out forwards;
 }
+
+@keyframes ringLeft{
+
+0%{
+transform:translateX(-220px);
+}
+
+70%{
+transform:translateX(10px);
+}
+
+100%{
+transform:translateX(0);
+}
+
+}
+
+@keyframes ringRight{
+
+0%{
+transform:translateX(220px);
+}
+
+70%{
+transform:translateX(-10px);
+}
+
+100%{
+transform:translateX(0);
+}
+
 }
 
 .sparkle{
+
 position:absolute;
 font-size:18px;
-animation:sparkle 1.5s infinite;
-}
 
-.s1{
-top:-10px;
-left:-12px;
-}
-
-.s2{
-bottom:-10px;
-right:-12px;
-animation-delay:.4s;
-}
-
-.s3{
-top:-10px;
-right:-12px;
-animation-delay:.2s;
-}
-
-.s4{
-bottom:-10px;
-left:-12px;
-animation-delay:.6s;
-}
-
-@keyframes sparkle{
-0%,100%{
 opacity:0;
-transform:scale(.5) rotate(0deg);
+
+animation:sparkleAfter 2.5s forwards;
+
 }
-50%{
+
+@keyframes sparkleAfter{
+
+0%,70%{
+
+opacity:0;
+transform:scale(.2);
+
+}
+
+85%{
+
 opacity:1;
-transform:scale(1.4) rotate(25deg);
+transform:scale(1.6);
+
 }
+
+100%{
+
+opacity:1;
+transform:scale(1);
+
+}
+
 }
 .moon{
 position:relative;
