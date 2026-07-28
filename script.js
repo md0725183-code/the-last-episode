@@ -42,6 +42,7 @@ fade.classList.remove("show");
 
 
 function episode2Loading(){
+    
 
 document.querySelector(".container").innerHTML=`
 
@@ -100,7 +101,7 @@ episode2Scene1();
 
 }
 function episode2Intro(){
-
+window.scrollTo(0,0);
 document.querySelector(".container").innerHTML=`
 
 <div style="
@@ -727,7 +728,7 @@ document.querySelector(".container").style.maxWidth = "100%";
 
 }
 function episode3Intro(){
-
+window.scrollTo(0,0);
 document.querySelector(".container").innerHTML=`
 
 <div style="
